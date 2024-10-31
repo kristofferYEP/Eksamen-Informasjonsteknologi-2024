@@ -1,9 +1,49 @@
-h1 {
-    text-align: center;
-    color: blue;
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
 }
 
-.structure {
-    background-color: lightgray;
-    color: black;
+/* Header */
+header {
+    background-color: #c6b4d8; /* Gul bakgrunnsfarge */
+    padding: 20px;
+    text-align: center;
 }
+
+header h1 {
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #000;
+}
+
+header h1, header p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation */
+nav {
+    background-color: #FFF;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
