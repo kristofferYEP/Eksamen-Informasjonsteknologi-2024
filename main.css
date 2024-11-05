@@ -5,7 +5,8 @@ body {
 
 /* Header */
 header {
-    background-color: #c6b4d8; /* Gul bakgrunnsfarge */
+    background-color: #c6b4d8;
+    /* Gul bakgrunnsfarge */
     padding: 20px;
     text-align: center;
 }
@@ -20,7 +21,8 @@ header p {
     color: #000;
 }
 
-header h1, header p {
+header h1,
+header p {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -47,3 +49,33 @@ nav a {
     font-weight: bold;
 }
 
+.nav-menu {
+
+    display: grid;
+    padding: 20px;
+    grid-template-columns: minmax(500px, 40vw);
+}
+
+.activity-page {
+    font-family: 'Georgia', serif;
+    display: grid;
+}
+
+.activity-page header {
+    background-color: #4b8b3b;
+    /* Endre til ønsket farge for aktivitetssiden */
+    padding: 20px;
+    text-align: center;
+}
+
+.gridcontainer {
+    display: grid;
+    background-color: #f9f9f9;
+    /* Lys bakgrunnsfarge */
+    padding: 20px;
+    /* Legger til padding for innholdet */
+    border-radius: 8px;
+    /* Rundede hjørner */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Skjermskygge for dybde */
+}
