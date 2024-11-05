@@ -79,3 +79,20 @@ nav a {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     /* Skjermskygge for dybde */
 }
+
+.header-image {
+    width: 200px;
+    /* Øker bredden på bildet */
+    max-width: 100%;
+    /* Sikrer at bildet ikke blir større enn containeren */
+    height: auto;
+    /* Bevarer proporsjonene */
+    border-radius: 15px;
+    /* Mer markerte rundede hjørner */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    /* Større, mykere skygge */
+    margin-right: 15px;
+    /* Litt avstand fra andre elementer */
+    display: inline-block;
+    object-fit: cover;
+}
