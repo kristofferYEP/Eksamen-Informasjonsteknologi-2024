@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="no">
-<!-- Setter språket til norsk -->
 
 <head>
-    <meta charset="UTF-8"> <!-- Angir tegnsett som UTF-8 for å støtte spesialtegn -->
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Sørger for responsivitet på alle enheter -->
-    <title>Aktiviten Sykkeltur</title> <!-- Tittel for aktivitetssiden -->
+    <title>Aktiviten Sykkeltur</title> <!-- Title for  -->
     <link rel="stylesheet" href="main.css"> <!-- Kobler til felles stilark (main.css) -->
 </head>
 
 <body class="activity-page">
     <header>
         <nav>
-            <img src="bilder/sykkel.jpeg" alt="Bicycle on a track " class="header-image">
+            <!-- Logo eller toppbilde for siden -->
+            <img src="bilder/sykkel.jpeg" alt="Bicycle on a track" class="header-image">
+            <!-- Navigasjonsmeny -->
             <ul class="nav-menu">
                 <li><a href="index.html">Hjem</a></li>
                 <li><a href="activity.html">Aktiviteter</a></li>
@@ -24,20 +25,56 @@
     </header>
 
     <main class="gridcontainer">
+        <!-- Hovedinnhold på siden -->
         <article>
             <div class="mainbox">
-                <h1>Explore Norway on a bicylce!</h1>
-                <p>
+                <h1>Explore Norway on a bicycle!</h1>
+                <h2>
                     Discover breathtaking bicycle tours in Norway!
                     From scenic coastal routes along the fjords to challenging
-                    mountain trails,
-                    Norway offers something for every cyclist.
+                    mountain trails, Norway offers something for every cyclist.
+                </h2>
+                <p class="intro">
+                    The ride starts at Bok & Blueshuset (The House of Books and Blues). Head east towards Hydroparken,
+                    where Sam Eyde and Kristian Birkeland’s industrial adventure began in 1905. At the marina, you turn
+                    sharply left up to Grønnbyen (Green Town) then to Admini. The houses in Grønnbyen were built to
+                    house the workers of Hydro andwere originally green, hence the name. Admini was the first
+                    administrative building of Norsk Hydro from 1906. Here, Sam Eyde welcomed distinguished guests and
+                    investors from all over the world. As you approach Tinfos, you cross the canal over a narrow bridge.
+                    Feel free to take the steep descent towards Tinfos. In the industrial area below Tinnefossen, there
+                    has been sawmilling, wood pulping, and power production for 150 years. Here you can also visit
+                    Telemark kunstmuseum (Telemark Art Museum). Cross the Tinnåa on the red pedestrian bridge over to
+                    Linna, originally used as a track for the horse railway. Once down by Heddalsvannet again, you
+                    follow the Industrial Promenade past the artwork “TRE”. Around the tree, the roots come up from the
+                    groundas symbols of Notodden’s history. If you have children, you should end the day in the activity
+                    park on Nesøya. Here you can skate, climb, jump, swim, and play basketball. If you prefer to take
+                    this round on foot, it is also a great way to get to know Notodden!
                 </p>
+            </div> <!-- Lukker mainbox-diven -->
 
+            <div class="gjemso">
+                <h3>Sykkeltur Gjemsø</h3>
+                <p>Turen går ut forbi Gjemsø skole og følger Solumgata opp til Fritidsparken, forbi denne og på en bratt
+                    grusvei opp til Voldsvegen og Geiteryggen flyplass. Etter passering av go-kartbane, speedwaybane og
+                    modellbilbane følger en grusvei nordover til Ulefossvegen, like ved Brekkatoppen. Strekningen derfra
+                    ned til Moflata er fin for syklister: forbud mot gjennomkjøring, lite trafikk og fartsgrense 30
+                    km/t. Benytt undergangen under rundkjøringa ved Moflata for å komme bort til Farelva og turveien
+                    "Hjellevannet rundt" til Klosterøya.
 
-            </div class="mainbox">
+                    Turen er en rundtur på ca 10 km., med laveste punkt ved Klosterøya ca 10 moh. og høyeste punkt ved
+                    Geiteryggen ca 135 moh. Retning og startsted er selvfølgelig valgfritt, men turen er beskrevet slik
+                    at en får motbakken som en bratt grusvei opp fra Fritidsparken og turen ned igjen på Ulefossvegen
+                    ("Stensrudsvingene") med lett sykling på god asfaltvei. Flyplassbygget har en kafe med kioskvarer,
+                    kaffe og middag.
+                </p>
+                <!-- Legger til et bilde av Gjemsø-ruten -->
+                <figure>
+                    <img src="bilder/sykkelElv.jpeg" alt="Utsikt langs sykkelruten ved Gjemsø" class="gjemso-image">
+                    <figcaption>Sykkelruten ved Gjemsø - naturskjønn utsikt og variert terreng</figcaption>
+                </figure>
+            </div> <!-- Lukker gjemso-diven -->
         </article>
-    </main>
+    </main> <!-- Lukker gridcontainer-main -->
 </body>
 
 </html>
