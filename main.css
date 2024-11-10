@@ -96,3 +96,8 @@ nav a {
     display: inline-block;
     object-fit: cover;
 }
+
+.intro {
+    font-weight: 700;
+    color: #666666;
+}
