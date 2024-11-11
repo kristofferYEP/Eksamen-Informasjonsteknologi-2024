@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 body {
     font-family: Arial, sans-serif;
     color: #333;
@@ -9,6 +10,29 @@ header {
     /* Gul bakgrunnsfarge */
     padding: 20px;
     text-align: center;
+=======
+body{
+    background-color: beige;
+    
+}
+
+
+.tittleboks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+h1 {
+    font-size: clamp(30px, 5vw, 60px);
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+    position: relative;
+
+>>>>>>> Stashed changes
 }
 
 header h1 {
@@ -16,6 +40,7 @@ header h1 {
     margin-bottom: 5px;
 }
 
+<<<<<<< Updated upstream
 header p {
     font-size: 1.2em;
     color: #000;
@@ -101,3 +126,5 @@ nav a {
     font-weight: 700;
     color: #666666;
 }
+=======
+>>>>>>> Stashed changes

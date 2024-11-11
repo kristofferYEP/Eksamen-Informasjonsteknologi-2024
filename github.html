@@ -1,29 +1,67 @@
 <!DOCTYPE html>
-<html lang="no"> <!-- Setter språket til norsk -->
+<html lang="no">
 <head>
-    <meta charset="UTF-8"> <!-- Angir tegnsett som UTF-8 for å støtte spesialtegn -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Sørger for responsivitet på alle enheter -->
-    <title>GitHub-samarbeid</title> <!-- Tittel for GitHub-samarbeidssiden -->
-    <link rel="stylesheet" href="css/main.css"> <!-- Kobler til felles stilark (main.css) -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Samarbeid - Eksamen</title>
+    <link rel="stylesheet" href="github_css.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#om-meg">Om meg</a></li>
-                <li><a href="#prosjekt">Prosjekt</a></li>
-                <li><a href="#kontakt">Kontakt</a></li>
-                </ul>
-                </nav>
-                </header>
-                <main>
-                    <section id="om-meg">
-                        <h2>Om meg</h2>
-                    </section>
-                </main>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>GitHub Prosjekt Samarbeid</h1>
+            <p>Dokumentasjon av vårt GitHub samarbeid for eksamen</p>
+        </div>
     </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Hjem</a></li>
+            <li><a href="activity.html">Aktiviteter</a></li>
+            <li><a href="accessibility.html">Tilgjengelighet</a></li>
+            <li><a href="github.html">GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section id="collaboration">
+            <h2>Effektivt Samarbeid på GitHub</h2>
+            <p>Ved bruk av GitHub har vi vært i stand til å administrere prosjektet vårt med letthet og effektivitet. Vi brukte separate grener for utvikling, slik at alle kunne jobbe selvstendig uten å påvirke hovedgrenen før koden ble gjennomgått og godkjent.</p>
+            <p>Regelmessige commits har bidratt til å holde arbeidet oversiktlig og gjør det lett å spore hver enkeltes bidrag.</p>
+        </section>
+
+        <section id="commit-history">
+            <h2>Commit Historie</h2>
+            <div class="image-row">
+                <img src="commit_history1.png" alt="Commit History Example 1">
+                <img src="commit_history2.png" alt="Commit History Example 2">
+            </div>
+            <p>Commit-historikken viser små og jevnlige endringer for å sikre stabilitet i prosjektet.</p>
+        </section>
+
+        <section id="specific-change">
+            <h2>Spesifikke Endringer i Commits</h2>
+            <div class="image-row">
+                <img src="specific_change1.png" alt="Specific Change Example 1">
+                <img src="specific_change2.png" alt="Specific Change Example 2">
+            </div>
+            <p>Disse bildene viser spesifikke kodeendringer, med fokus på detaljerte forbedringer.</p>
+        </section>
+
+        <section id="benefits">
+            <h2>Fordeler med Git og GitHub</h2>
+            <ul>
+                <li>Versjonskontroll gjør det lett å holde oversikt over alle endringer.</li>
+                <li>Samarbeid i sanntid med hver person på sitt eget arbeid.</li>
+                <li>Mulighet for sporing og håndtering av eventuelle kodekonflikter.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Gruppen. All dokumentasjon av GitHub-bruk er tilgjengelig her.</p>
+        </div>
+    </footer>
 </body>
 </html>
-
