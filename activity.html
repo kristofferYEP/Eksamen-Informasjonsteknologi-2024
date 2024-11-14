@@ -4,89 +4,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aktivitet Sykkeltur</title>
-    <link rel="stylesheet" href="main.css">
+    <title>Aktiviteter i Norge</title>
+    <link rel="stylesheet" href="aktivitet.css">
 </head>
 
-<body class="activity-page">
+<body>
     <header>
-        <nav>
-            <img src="bilder/sykkel.jpeg" alt="Bicycle on a track" class="header-image">
-            <ul class="nav-menu">
-                <li><a href="index.html">Hjem</a></li>
-                <li><a href="activity.html">Aktiviteter</a></li>
-                <li><a href="accessibility.html">Tilgjengelighet</a></li>
-                <li><a href="github.html">GitHub</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Aktiviteter i Norge</h1>
+            <p>Utforsk spennende sykkelturer og opplevelser</p>
+        </div>
     </header>
 
-    <main class="gridcontainer">
-        <article class="activity-info">
-            <div class="intro-text">
-                <h1>Explore Norway on a bicycle!</h1>
-                <h2>Discover breathtaking bicycle tours in Norway!</h2>
-                <p>
-                    The ride starts at Bok & Blueshuset (The House of Books and Blues). Head east towards Hydroparken,
-                    where Sam Eyde and Kristian Birkeland’s industrial adventure began in 1905. At the marina, you turn
-                    sharply left up to Grønnbyen (Green Town), then to Admini. The houses in Grønnbyen were built to
-                    house the workers of Hydro and were originally green, hence the name. Admini was the first
-                    administrative building of Norsk Hydro from 1906. Here, Sam Eyde welcomed distinguished guests and
-                    investors from all over the world. As you approach Tinfos, you cross the canal over a narrow bridge.
-                    Feel free to take the steep descent towards Tinfos. In the industrial area below Tinnefossen, there
-                    has been sawmilling, wood pulping, and power production for 150 years. Here you can also visit
-                    Telemark kunstmuseum (Telemark Art Museum). Cross the Tinnåa on the red pedestrian bridge over to
-                    Linna, originally used as a track for the horse railway. Once down by Heddalsvannet again, you
-                    follow the Industrial Promenade past the artwork “TRE”. Around the tree, the roots come up from the
-                    ground as symbols of Notodden’s history. If you have children, you should end the day in the
-                    activity park on Nesøya. Here you can skate, climb, jump, swim, and play basketball. If you prefer
-                    to take this round on foot, it is also a great way to get to know Notodden!
-                </p>
-            </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Hjem</a></li>
+            <li><a href="activity.html">Aktiviteter</a></li>
+            <li><a href="accessibility.html">Tilgjengelighet</a></li>
+            <li><a href="github.html">GitHub</a></li>
+        </ul>
+    </nav>
 
-            <section class="tour-details">
-                <h3>Sykkeltur Gjemsø</h3>
-                <p>
-                    Turen går ut forbi Gjemsø skole og følger Solumgata opp til Fritidsparken, forbi denne og på en
-                    bratt
-                    grusvei opp til Voldsvegen og Geiteryggen flyplass. Etter passering av go-kartbane, speedwaybane og
-                    modellbilbane følger en grusvei nordover til Ulefossvegen, like ved Brekkatoppen. Strekningen derfra
-                    ned til Moflata er fin for syklister: forbud mot gjennomkjøring, lite trafikk og fartsgrense 30
-                    km/t. Benytt undergangen under rundkjøringa ved Moflata for å komme bort til Farelva og turveien
-                    "Hjellevannet rundt" til Klosterøya.
+    <main class="container">
+        <div class="content-container">
+            <aside>
+                <h2>Tur Informasjon</h2>
+                <p>Opplev fantastiske sykkelturer i vakre omgivelser og lær om Norges rike historie og kultur underveis.
                 </p>
-                <p>
-                    Turen er en rundtur på ca 10 km., med laveste punkt ved Klosterøya ca 10 moh. og høyeste punkt ved
-                    Geiteryggen ca 135 moh. Retning og startsted er selvfølgelig valgfritt, men turen er beskrevet slik
-                    at en får motbakken som en bratt grusvei opp fra Fritidsparken og turen ned igjen på Ulefossvegen
-                    ("Stensrudsvingene") med lett sykling på god asfaltvei. Flyplassbygget har en kafe med kioskvarer,
-                    kaffe og middag.
-                </p>
+            </aside>
+            <section>
+                <h2>Tur Detaljer: Sykkeltur Gjemsø</h2>
+                <p>Turen går ut forbi Gjemsø skole og følger Solumgata opp til Fritidsparken...</p>
+                <p>Strekningen derfra ned til Moflata er fin for syklister: forbud mot gjennomkjøring...</p>
             </section>
+        </div>
 
-            <!-- Bilde galleri -->
-            <section class="image-gallery">
-                <div class="image-item">
-                    <img src="bilder/fin statue.jpeg" alt="Artistic statue along the bicycle route near Gjemsø"
-                        class="gjemso-image">
-                    <figcaption>Statue langs sykkelruten ved Gjemsø</figcaption>
-                </div>
+        <section class="activity-container">
+            <article class="activity-card">
+                <img src="bilder/barca200.jpg" alt="Manchester United logo">
+                <h2>Manchester United</h2>
+                <p>Informasjon</p>
+                <a href="https://www.united.no/" class="activity-button">LES MER</a>
+            </article>
 
-                <div class="image-item">
-                    <img src="bilder/sykkel.jpeg" alt="Cyclist riding on a road surrounded by greenery"
-                        class="gjemso-image">
-                    <figcaption>En syklist på vei gjennom vakre landskap</figcaption>
-                </div>
+            <article class="activity-card">
+                <img src="bilder/barca200.png" alt="Barcelona logo">
+                <h2>Barcelona</h2>
+                <p>Informasjon</p>
+                <a href="https://en.psg.fr/" class="activity-button">LES MER</a>
+            </article>
 
-                <div class="image-item">
-                    <img src="bilder/sykkeltur gjelperdsdalen.jpeg" alt="Cycling route through the Gjelperdsdalen area"
-                        class="gjemso-image">
-                    <figcaption>Sykkeltur gjennom Gjelperdsdalen - perfekt for eventyrlystne</figcaption>
-                </div>
-            </section>
-        </article>
+            <article class="activity-card">
+                <img src="bilder/real1920x1080.jpg" alt="Real Madrid logo">
+                <h2>Real Madrid</h2>
+                <p>Informasjon</p>
+                <a href="https://www.realmadrid.com/en-US" class="activity-button">LES MER</a>
+            </article>
+        </section>
     </main>
-
 </body>
 
 </html>
