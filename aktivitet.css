@@ -13,7 +13,7 @@ body {
 }
 
 header {
-    background-color: #444;
+    background-color: #3a8d3e;
     color: white;
     padding: 20px;
     text-align: center;
@@ -25,7 +25,7 @@ header .container h1 {
 }
 
 nav {
-    background-color: #333;
+    background-color: #246928;
     padding: 10px;
 }
 
@@ -83,7 +83,7 @@ section {
 }
 
 .activity-card {
-    background-color: #fff;
+    background-color: #f0f0f0;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -96,11 +96,16 @@ section {
 }
 
 .activity-card img {
-    width: 100%;
-    height: auto;
+    width: 150px;
+    /* Sett en fast bredde */
+    height: 150px;
+    /* Sett en fast høyde */
+    object-fit: contain;
+    /* Beholder proporsjonene på bildet */
     border-radius: 5px;
     margin-bottom: 15px;
 }
+
 
 .activity-card h2 {
     font-size: 1.5em;
