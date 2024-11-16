@@ -101,23 +101,6 @@ body {
     padding: 20px;
 }
 
-header {
-    background-color: #006bb3;
-    color: #fff;
-    text-align: center;
-    padding: 40px 20px;
-    margin-bottom: 30px;
-    position: relative;
-}
-
-.header-image {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-}
-
 nav {
     background-color: #fff;
     border-bottom: 1px solid #ddd;
@@ -125,28 +108,10 @@ nav {
     margin-bottom: 30px;
 }
 
-nav ul {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    list-style: none;
-}
-
 nav ul li {
     font-weight: bold;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: #006bb3;
-    padding: 10px 15px;
-    transition: background-color 0.3s;
-    border-radius: 5px;
-}
-
-nav ul li a:hover {
-    background-color: #e0f0ff;
-}
 
 main h2 {
     color: #006bb3;
@@ -161,51 +126,67 @@ section {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
 }
 
-ul {
-    list-style-type: disc;
-    margin-left: 20px;
-}
-
 ul li {
     margin-bottom: 10px;
 }
 
-/* Styling for image gallery */
-.image-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.image-item {
-    flex: 1 1 calc(33% - 20px);
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    position: relative;
-}
-
-.image-item img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.image-item figcaption {
-    padding: 10px;
-    font-size: 0.9em;
-    color: #555;
-    background-color: #f9f9f9;
-    text-align: center;
-}
-
+/* Forbedret footer styling */
 footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    font-size: 0.9em;
-    margin-top: 30px;
+    background-color: #004d80;
+    /* Litt mørkere for kontrast */
+    padding: 20px;
+    text-align: left;
+    color: #ddd;
+    border-top: 3px solid #003366;
+    /* Legger til en toppgrense for effekt */
+}
+
+footer h3 {
+    color: white;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    /* Gir litt avstand fra underliggende elementer */
+    display: flex;
+    align-items: center;
+}
+
+footer h4,
+footer p {
+    color: #f0f0f0;
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+footer p {
+    padding-left: 2%;
+}
+
+/* Styling for button */
+footer button {
+    background-color: #ffaa00;
+    /* Farge som står ut og gir kontrast */
+    color: #004d80;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-left: 15px;
+    /* Liten avstand fra teksten */
+    transition: background-color 0.3s, transform 0.3s;
+    /* Smooth hover-effekter */
+}
+
+footer button:hover {
+    background-color: #ffcc33;
+    /* Lysere variant ved hover */
+    transform: scale(1.05);
+    /* Liten zoom-effekt ved hover */
+}
+
+footer button:active {
+    background-color: #e69500;
+    /* Mørkere farge ved klikk */
+    transform: scale(0.98);
+    /* Liten nedtrykt effekt ved klikk */
 }
