@@ -13,7 +13,7 @@ body {
 }
 
 header {
-    background-color: #3a8d3e;
+    background-color: #e92618;
     color: white;
     padding: 20px;
     text-align: center;
@@ -120,7 +120,7 @@ section {
 .activity-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #ffdd57;
+    background-color: #57eeff;
     color: black;
     text-decoration: none;
     border-radius: 5px;
@@ -128,15 +128,8 @@ section {
     transition: background-color 0.3s;
 }
 
-.activity-drakt {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #ffdd57;
-    color: black;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s;
+.activity-button-small:hover {
+    background-color: #ffcc33;
 }
 
 .activity-button:hover {
