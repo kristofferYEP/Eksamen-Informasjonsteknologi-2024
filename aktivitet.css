@@ -13,7 +13,7 @@ body {
 }
 
 header {
-    background-color: #e92618;
+    background-color: darkcyan;
     color: white;
     padding: 20px;
     text-align: center;
@@ -25,7 +25,7 @@ header .container h1 {
 }
 
 nav {
-    background-color: #246928;
+    background-color: darkcyan;
     padding: 10px;
 }
 
@@ -118,7 +118,7 @@ section {
 }
 
 .activity-button {
-    display: inline-block;
+    display: block;
     padding: 10px 20px;
     background-color: #57eeff;
     color: black;
@@ -126,6 +126,7 @@ section {
     border-radius: 5px;
     font-weight: bold;
     transition: background-color 0.3s;
+    margin-bottom: 10px;
 }
 
 .activity-button-small:hover {
