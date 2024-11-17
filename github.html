@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <section class="header-content">
+        <section class="header-content container">
             <h1>GitHub Prosjekt Samarbeid</h1>
             <p>Dokumentasjon av vårt GitHub samarbeid for eksamen</p>
         </section>
@@ -23,7 +23,36 @@
         </ul>
     </nav>
 
-    <main class="main-content">
+    <main class="main-content container">
+        <section id="collaboration-overview">
+            <h2>Oversikt over Samarbeid</h2>
+            <p>
+                GitHub er en sentralisert plattform som effektiviserer samarbeid på prosjekter. Gjennom commit-historikk og detaljerte endringsoversikter
+                kan team enkelt spore og forstå endringer, samt samarbeide uten konflikter.
+            </p>
+            <div class="image-row">
+                <img src="/bilder/Commit_history_1.png" alt="Commit-historikk">
+                <img src="/bilder/Commit_1.png" alt="Kodeendringer i commit">
+            </div>
+            <p>
+                Bildene over illustrerer hvordan GitHub holder styr på commit-historikken og spesifikke kodeendringer. Det første bildet viser en oversikt
+                over alle commits, med detaljer om tidspunkter og bidragsytere. Det andre bildet fremhever endringer i koden, markert med linjer lagt til eller fjernet.
+                Disse funksjonene gjør det enkelt å spore fremdrift og forstå bidrag fra teammedlemmer.
+            </p>
+        </section>
+
+        <!-- Placeholder for to bilder til -->
+        <section id="future-images" style="display: none;">
+            <h2>Flere Endringer</h2>
+            <div class="image-row">
+                <img src="" alt="Placeholder for fremtidig bilde">
+                <img src="" alt="Placeholder for fremtidig bilde">
+            </div>
+            <p>
+                (Placeholder tekst: Her vil fremtidige bilder og beskrivelser av ytterligere commit-historikk og kodeendringer bli lagt til.)
+            </p>
+        </section>
+
         <section id="benefits-git">
             <h2>Fordeler med Git</h2>
             <ul>
@@ -41,21 +70,17 @@
                 <li>Kontinuerlig Integrasjon (CI): GitHub Actions muliggjør automatisert testing og utrulling.</li>
             </ul>
         </section>
-
-        <section id="benefits-liveshare">
-            <h2>Fordeler med LiveShare i VS Code</h2>
-            <ul>
-                <li>Samarbeid i sanntid: Arbeid med andre i sanntid og del samme kodeomgivelse.</li>
-                <li>Redigering med flere brukere: Flere brukere kan redigere, debugge og gjennomgå kode samtidig.</li>
-                <li>Økt produktivitet: Nyttig for fjerngjennomgang, debugging og tilbakemeldinger i sanntid.</li>
-            </ul>
-        </section>
     </main>
 
-    <footer>
-        <section class="footer-content">
-            <p>© 2024 Gruppen. All dokumentasjon av GitHub-bruk er tilgjengelig her.</p>
-        </section>
-    </footer>
+    <footer id="footer-OsloMet">
+        <h3>Hold deg oppdatert på hva som skjer på campus <button> Abboner</button></h3>
+        <h4>OSLO METROPOLITIAN UNIVERSITY</h4>
+        <p>STORBYUNIVERSITETET</p>
+        <p>Postboks 4, St. Olavs plass</p>
+        <p>0130 Oslo</p>
+        <p>Tlf.: 67 23 50 00 </p>
+        <p>E-post: post@oslomet.no</p>
+        <img src="bilder/oslomet-logo-gul.webp" class="footer-bilde" alt="OsloMet logo" </footer>
+
 </body>
 </html>

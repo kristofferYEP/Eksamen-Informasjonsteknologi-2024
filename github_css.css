@@ -76,6 +76,12 @@ section {
     margin-bottom: 20px;
     border-radius: 8px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: scale(1.02); /* Slightly scale up the section */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
 }
 
 ul {
@@ -87,17 +93,28 @@ ul li {
     margin-bottom: 10px;
 }
 
+/* Styles for image rows */
 .image-row {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
     gap: 20px;
+    margin-top: 15px;
+    align-items: start; /* Align images at the top */
 }
 
 .image-row img {
-    width: 48%;
+    width: 100%;
+    max-height: 400px; /* Limit height for consistency */
     border-radius: 8px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    object-fit: contain; /* Ensure the images fit nicely */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .image-row {
+        grid-template-columns: 1fr; /* Stack images vertically */
+    }
 }
 
 footer {
@@ -108,16 +125,62 @@ footer {
     font-size: 0.9em;
     margin-top: 30px;
 }
-section {
-    background-color: #2a2a2a; /* Darker section background */
+footer {
+    background-color: #004d80;
+    /* Litt mørkere for kontrast */
     padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+    color: #ddd;
+    border-top: 3px solid #003366;
+    /* Legger til en toppgrense for effekt */
 }
 
-section:hover {
-    transform: scale(1.02); /* Slightly scale up the section */
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+footer h3 {
+    color: white;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    /* Gir litt avstand fra underliggende elementer */
+    display: flex;
+    align-items: center;
+}
+
+footer h4,
+footer p {
+    color: #f0f0f0;
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+footer p {
+    padding-left: 2%;
+}
+
+/* Styling for button */
+footer button {
+    background-color: #ffaa00;
+    /* Farge som står ut og gir kontrast */
+    color: #004d80;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-left: 15px;
+    /* Liten avstand fra teksten */
+    transition: background-color 0.3s, transform 0.3s;
+    /* Smooth hover-effekter */
+}
+
+footer button:hover {
+    background-color: #ffcc33;
+    /* Lysere variant ved hover */
+    transform: scale(1.05);
+    /* Liten zoom-effekt ved hover */
+}
+
+footer button:active {
+    background-color: #e69500;
+    /* Mørkere farge ved klikk */
+    transform: scale(0.98);
+    /* Liten nedtrykt effekt ved klikk */
 }
