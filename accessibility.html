@@ -1,18 +1,92 @@
 <!DOCTYPE html>
 <html lang="no">
-<!-- Setter språket til norsk -->
 
 <head>
-    <meta charset="UTF-8"> <!-- Angir tegnsett som UTF-8 for å støtte spesialtegn -->
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Sørger for responsivitet på alle enheter -->
-    <title>Tilgjengelighet</title> <!-- Tittel for tilgjengelighetssiden -->
-    <link rel="stylesheet" href="css/main.css"> <!-- Kobler til felles stilark (main.css) -->
+    <meta name="description" content="Lær om universell utforming og hvorfor det er viktig for inkluderende nettsider.">
+    <title>Tilgjengelighet</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <p>AMAN</p>
-    <!-- Hovedinnhold for tilgjengelighetssiden --> dddd
+    <!-- Toppseksjon med navigasjon -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="accessibility.html" aria-current="page">Tilgjengelighet</a></li>
+                <li><a href="github.html">GitHub</a></li>
+                <li><a href="activity.html">Aktivitet</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hovedinnhold -->
+    <main>
+        <!-- Introduksjonsseksjon -->
+        <section>
+            <h1>Tilgjengelighet i webdesign</h1>
+            <p>
+                Universell utforming sikrer at nettsider, verktøy og teknologier er designet og utviklet slik at personer med funksjonsnedsettelser kan bruke dem. Dette inkluderer personer med syns-, hørsel-, motoriske eller kognitive utfordringer.
+            </p>
+        </section>
+
+        <!-- Hvorfor tilgjengelighet er viktig -->
+        <section>
+            <h2>Hvorfor er tilgjengelighet viktig?</h2>
+            <p>
+                Å gjøre nettet tilgjengelig er til fordel for alle. Tilgjengelige nettsider er enklere å bruke for alle brukere, inkludert de med midlertidige funksjonsnedsettelser som en brukket arm, eller aldersrelaterte utfordringer som nedsatt syn.
+            </p>
+            <ul>
+                <li>Forbedrer brukervennlighet for alle.</li>
+                <li>Utvider publikums rekkevidde.</li>
+                <li>Overholder etiske og juridiske standarder (f.eks. WCAG og Likestillings- og diskrimineringsloven).</li>
+            </ul>
+        </section>
+
+        <!-- Kjerneprinsipper for tilgjengelighet -->
+        <section>
+            <h2>Kjerneprinsipper for tilgjengelighet</h2>
+            <p>
+                Retningslinjene for universell utforming av nettinnhold (WCAG) beskriver fire prinsipper:
+            </p>
+            <ol>
+                <li><strong>Oppfattbart:</strong> Informasjon må presenteres på måter som brukerne kan oppfatte (f.eks. tekstalternativer for bilder).</li>
+                <li><strong>Betjenbart:</strong> Brukergrensesnittet må kunne brukes med tastatur eller hjelpemidler.</li>
+                <li><strong>Forståelig:</strong> Innhold må være tydelig og forutsigbart.</li>
+                <li><strong>Robust:</strong> Innhold må fungere med ulike hjelpemidler.</li>
+            </ol>
+        </section>
+
+        <!-- Tips for utviklere -->
+        <section>
+            <h2>Praktiske tips for utviklere</h2>
+            <ul>
+                <li>Bruk semantiske HTML-elementer (f.eks. <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>).</li>
+                <li>Gi meningsfulle <code>alt</code>-attributter for bilder.</li>
+                <li>Sørg for tilstrekkelig kontrast mellom tekst og bakgrunn.</li>
+                <li>Gjør interaktive elementer tilgjengelige med tastatur.</li>
+                <li>Test nettsiden med skjermlesere og tilgjengelighetsverktøy.</li>
+            </ul>
+        </section>
+
+        <!-- Nyttige ressurser -->
+        <section>
+            <h2>Nyttige ressurser</h2>
+            <p>Her er noen ressurser for å lære mer om universell utforming:</p>
+            <ul>
+                <li><a href="https://www.w3.org/WAI/" target="_blank" rel="noopener">W3C Web Accessibility Initiative (WAI)</a></li>
+                <li><a href="https://wave.webaim.org/" target="_blank" rel="noopener">WAVE-verktøy for universell utforming</a></li>
+                <li><a href="https://www.a11yproject.com/" target="_blank" rel="noopener">The A11Y Project</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Bunntekst -->
+    <footer>
+        <p>&copy; 2024 Ditt Navn | Bygget med fokus på universell utforming</p>
+    </footer>
 </body>
 
 </html>
