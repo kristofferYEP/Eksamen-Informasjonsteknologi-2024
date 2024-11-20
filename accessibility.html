@@ -3,56 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Presentasjon av universell utforming for nettstedet.">
     <title>Accessibility</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
+
+
+
+
 <body>
     <header>
-        <h1>Universell Utforming</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Hjem</a></li>
-                <li><a href="github.html">GitHub</a></li>
-                <li><a href="activity.html">Aktivitet</a></li>
-                <li><a href="accessibility.html" aria-current="page">Universell Utforming</a></li>
-            </ul>
-        </nav>
+        <h1>Tilgjengelighet</h1>
+       
     </header>
-
     <main>
-        <section id="intro">
-            <h2>Kort Presentasjon av Universell Utforming</h2>
-            <p>Nettstedet vårt er utviklet med universell utforming som mål for å gjøre det tilgjengelig for alle brukere, inkludert personer med nedsatt syn, hørsel, motoriske ferdigheter og kognitive utfordringer. Vi har brukt semantisk HTML, ARIA-roller, god kontrast og tekstalternativer for bilder for å sikre at nettstedet er brukervennlig for alle.</p>
+        <section>
+            <h2>Hva er tilgjengelighet?</h2>
+            <p>Tilgjengelighet på nettet handler om å sikre at alle brukere, inkludert personer med funksjonsnedsettelser, kan navigere og bruke nettstedet uten problemer.</p>
+            <p>Dette inkluderer brukere som benytter skjermlesere, navigerer kun med tastatur eller har utfordringer med fargesyn.</p>
         </section>
-
-        <section id="automated-testing">
-            <h2>Resultater fra Automatisert Testing</h2>
-            <p>Vi brukte <a href="https://wave.webaim.org/" target="_blank">WAVE</a> og <a href="https://developers.google.com/web/tools/lighthouse" target="_blank">Lighthouse</a> for å teste tilgjengeligheten på nettstedet. Den automatiserte testen identifiserte noen mindre advarsler, inkludert lav kontrast på enkelte tekstområder. Disse ble håndtert manuelt ved å øke kontrasten og forbedre fargevalg.</p>
-            <img src="wave-test-screenshot.png" alt="Skjermbilde av WAVE-testresultat">
-            <img src="lighthouse-test-screenshot.png" alt="Skjermbilde av Lighthouse-testresultat">
-        </section>
-
-        <section id="manual-review">
-            <h2>Manuell Gjennomgang og Kodevalg</h2>
-            <p>Selv om automatiserte tester gir verdifull innsikt, er det fortsatt nødvendig med manuell gjennomgang for å sikre full tilgjengelighet. Her er noen av kodetilpasningene vi har gjort som ikke fanges opp av automatiserte tester:</p>
+        <section>
+            <h2>Beste praksis for tilgjengelighet</h2>
+            <p>Her er noen grunnleggende prinsipper for å oppnå universelt design:</p>
             <ul>
-                <li>Bruk av <code>alt</code>-attributter for alle bilder, slik at skjermlesere kan beskrive bildene for brukere med nedsatt syn.</li>
-                <li>Implementering av ARIA-roller som <code>role="navigation"</code> for å forbedre navigasjon med skjermlesere.</li>
-                <li>Sikring av at alle interaktive elementer (knapper, lenker) kan nås med tastatur.</li>
-                <li>Responsiv design ved bruk av flexbox og media queries for å sikre at siden fungerer godt på både mobil, laptop og desktop.</li>
+                <li>Bruk av semantisk HTML for bedre skjermleserkompatibilitet.</li>
+                <li>Legg til alternativ tekst (<code>alt</code>) for alle bilder.</li>
+                <li>Test nettstedets kontrastnivåer med verktøy som Contrast Checker.</li>
+                <li>Tilby tastaturnavigasjon for alle interaktive elementer.</li>
             </ul>
-            <img src="code-screenshot.png" alt="Skjermbilde av koden med kommentarer om universell utforming">
         </section>
-
-        <section id="conclusion">
-            <h2>Konklusjon</h2>
-            <p>Tilgjengelighet er et kontinuerlig arbeid som krever både automatisert testing og manuell gjennomgang. Selv om verktøy som WAVE og Lighthouse gir god veiledning, kan det være problemer som de ikke oppdager. Derfor er det viktig å manuelt teste siden med skjermleser og tastaturnavigasjon for å sikre en universelt tilgjengelig opplevelse for alle brukere.</p>
+        <section>
+            <h2>Testresultater</h2>
+            <p>Vi testet tilgjengeligheten til dette nettstedet ved hjelp av Lighthouse og WAVE. Begge testene viste gode resultater, men vi identifiserte noen forbedringsområder:</p>
+            <ul>
+                <li>Oppdatering av <code>alt</code>-tekster for bilder for å gjøre dem mer beskrivende.</li>
+                <li>Optimalisering av kontrastnivå på knapper og tekst.</li>
+            </ul>
+            <img src="lighthouse-results.png" alt="Skjermbilde av Lighthouse-testen">
+        </section>
+        <section>
+            <h2>Fremtidige forbedringer</h2>
+            <p>Selv om nettstedet allerede oppfyller mange tilgjengelighetsstandarder, er det noen forbedringer som kan implementeres i fremtiden:</p>
+            <ul>
+                <li>Støtte for flere språk ved hjelp av <code>lang</code>-attributtet i HTML.</li>
+                <li>Ytterligere tester med ulike skjermlesere som NVDA og VoiceOver.</li>
+                <li>Kontinuerlig brukertesting for å få tilbakemeldinger fra ekte brukere.</li>
+            </ul>
         </section>
     </main>
-
     <footer>
-        <p>© 2024 Studentgruppe. Alle rettigheter reservert.</p>
+        <p>&copy; ..</p>
     </footer>
 </body>
 </html>
