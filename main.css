@@ -1,98 +1,192 @@
 body {
     font-family: Arial, sans-serif;
-    color: #333;
 }
 
-/* Header */
-header {
-    background-color: #c6b4d8;
-    /* Gul bakgrunnsfarge */
-    padding: 20px;
+/* Generell CSS for header-seksjonen */
+.header-index {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('bilder/osloMet.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin: 0;
+}
+
+/* Stilen for overskriften på bildet */
+.text-overskrift {
+    width: 90%;
+    color: lightblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
+    text-shadow: 2px 2px 4px #000000;
 }
 
-header h1 {
-    font-size: 2em;
-    margin-bottom: 5px;
+.text-overskrift h1 {
+    font-size: 5em;
+    letter-spacing: 0.1em;
 }
 
-header p {
+/* Stilen for logoen øverst til venstre */
+.header-index img {
+    width: 100px;
+    position: absolute;
+    top: 4%;
+    left: 5%;
+}
+
+/* Navigasjonsbaren */
+.navbar-lenker {
+    display: flex;
+    justify-content: center;
+    background-color: lightgray;
+    padding: 15px 0;
+}
+
+.navbar-lenker nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-lenker nav ul li {
+    display: inline-block;
+}
+
+.navbar-lenker nav ul li a {
+    color: #006bb3;
+    text-decoration: none;
     font-size: 1.2em;
-    color: #000;
+    font-family: Arial, sans-serif;
+    padding: 8px 16px;
+    transition: background-color 0.3s;
 }
 
-header h1,
-header p {
+.navbar-lenker nav ul li a:hover {
+    background-color: darkorange;
+    border-radius: 5px;
+}
+
+
+.tittleboks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+/* Resetting and global styles */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-/* Navigation */
+body {
+    background-color: #f3f3f3;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
 nav {
-    background-color: #FFF;
-    padding: 10px;
+    background-color: #fff;
     border-bottom: 1px solid #ddd;
-    text-align: center;
+    padding: 15px 0;
+    margin-bottom: 30px;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #000;
+nav ul li {
     font-weight: bold;
 }
 
-.nav-menu {
 
-    display: grid;
-    padding: 20px;
-    grid-template-columns: minmax(500px, 40vw);
+main h2 {
+    color: #006bb3;
+    margin-bottom: 15px;
 }
 
-.activity-page {
-    font-family: 'Georgia', serif;
-    display: grid;
-}
-
-.activity-page header {
-    background-color: #4b8b3b;
-    /* Endre til ønsket farge for aktivitetssiden */
+section {
+    background-color: #fff;
     padding: 20px;
-    text-align: center;
-}
-
-.gridcontainer {
-    display: grid;
-    background-color: #f9f9f9;
-    /* Lys bakgrunnsfarge */
-    padding: 20px;
-    /* Legger til padding for innholdet */
+    margin-bottom: 20px;
     border-radius: 8px;
-    /* Rundede hjørner */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    /* Skjermskygge for dybde */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
 }
 
-.header-image {
-    width: 200px;
-    /* Øker bredden på bildet */
-    max-width: 100%;
-    /* Sikrer at bildet ikke blir større enn containeren */
-    height: auto;
-    /* Bevarer proporsjonene */
-    border-radius: 15px;
-    /* Mer markerte rundede hjørner */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    /* Større, mykere skygge */
-    margin-right: 15px;
-    /* Litt avstand fra andre elementer */
-    display: inline-block;
-    object-fit: cover;
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Forbedret footer styling */
+footer {
+    background-color: #004d80;
+    /* Litt mørkere for kontrast */
+    padding: 20px;
+    text-align: left;
+    color: #ddd;
+    border-top: 3px solid #003366;
+    /* Legger til en toppgrense for effekt */
+}
+
+footer h3 {
+    color: white;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    /* Gir litt avstand fra underliggende elementer */
+    display: flex;
+    align-items: center;
+}
+
+footer h4,
+footer p {
+    color: #f0f0f0;
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+footer p {
+    padding-left: 2%;
+}
+
+/* Styling for button */
+footer button {
+    background-color: #ffaa00;
+    /* Farge som står ut og gir kontrast */
+    color: #004d80;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-left: 15px;
+    /* Liten avstand fra teksten */
+    transition: background-color 0.3s, transform 0.3s;
+    /* Smooth hover-effekter */
+}
+
+footer button:hover {
+    background-color: #ffcc33;
+    /* Lysere variant ved hover */
+    transform: scale(1.05);
+    /* Liten zoom-effekt ved hover */
+}
+
+footer button:active {
+    background-color: #e69500;
+    /* Mørkere farge ved klikk */
+    transform: scale(0.98);
+    /* Liten nedtrykt effekt ved klikk */
 }
