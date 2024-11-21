@@ -88,14 +88,39 @@ img {
 
 /* Footer */
 footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-    margin-top: 2rem;
+  background-color: #002e5d; 
+  color: white;
+  padding: 20px;
 }
 
+.footer-content {
+  display: flex; /* Flexbox for horisontal layout */
+  justify-content: space-between; /* Spre innholdet horisontalt */
+  align-items: center; /* Sentrer vertikalt */
+  max-width: 1200px; /* Begrens bredde */
+  margin: 0 auto; /* Sentraliser innholdet */
+}
 
+.footer-text {
+  flex: 1; /* Teksten tar opp mesteparten av plassen */
+}
+
+.footer-logo img {
+  max-width: 150px; /* Begrens størrelsen på logoen */
+  height: auto;
+}
+
+/* Abonner-knappen */
+.subscribe-button {
+  display: inline-block;
+  background-color: #fbb034; /* Oransje */
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
 
 </style>
 
@@ -148,14 +173,21 @@ footer {
         </section>
     </main>
     <footer id="footer-OsloMet">
-        <h3>Hold deg oppdatert på hva som skjer på campus <button>Abonner</button></h3>
-        <h4>OSLO METROPOLITIAN UNIVERSITY</h4>
-        <p>STORBYUNIVERSITETET</p>
-        <p>Postboks 4, St. Olavs plass</p>
-        <p>0130 Oslo</p>
-        <p>Tlf.: 67 23 50 00 </p>
-        <p>E-post: post@oslomet.no</p>
-        <img src="bilder/oslomet-logo-gul.webp" width="300px" class="footer-bilde" alt="OsloMet logo"> 
+        <div class="footer-content">
+            <div class="footer-text">
+              <h3>Hold deg oppdatert på hva som skjer på campus</h3>
+              <a href="https://www.oslomet.no" class="subscribe-button">Abonner</a>
+              <h4>OSLO METROPOLITIAN UNIVERSITY</h4>
+              <p>STORBYUNIVERSITETET</p>
+              <p>Postboks 4, St. Olavs plass</p>
+              <p>0130 Oslo</p>
+              <p>Tlf.: 67 23 50 00</p>
+              <p>E-post: <a href="mailto:post@oslomet.no">post@oslomet.no</a></p>
+            </div>
+            <div class="footer-logo">
+              <img src="bilder/oslomet-logo-gul.webp" alt="OsloMet logo">
+            </div>
+        </div>
     </footer>
     
 </body>
