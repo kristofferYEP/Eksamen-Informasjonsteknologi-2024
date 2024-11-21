@@ -22,12 +22,13 @@ body {
 header {
     background: #0078d7;
     color: #fff;
-    padding: 1rem 0;
+    padding: 2.5rem 0;
     text-align: center;
 }
 
 header h1 {
-    margin: 0;
+    margin: 1;
+    font-size: 40px;
 }
 
 /* Navigasjonsmeny */
@@ -108,7 +109,6 @@ footer {
                 <li><a href="activity.html">Aktivitet</a></li>
                 <li><a href="accessibility.html" class="active">Tilgjengelighet</a></li>
                 <li><a href="github.html">GitHub</a></li>
-                
             </ul>
         </nav>
     </header>
@@ -123,7 +123,6 @@ footer {
             <p>Her er noen grunnleggende prinsipper for å oppnå universelt design:</p>
             <ul>
                 <li>Bruk av semantisk HTML for bedre skjermleserkompatibilitet.</li>
-                <li>Legg til alternativ tekst (<code>alt</code>) for alle bilder.</li>
                 <li>Test nettstedets kontrastnivåer med verktøy som Contrast Checker.</li>
                 <li>Tilby tastaturnavigasjon for alle interaktive elementer.</li>
             </ul>
@@ -132,8 +131,9 @@ footer {
             <h2>Testresultater</h2>
             <p>Vi testet tilgjengeligheten til dette nettstedet ved hjelp av Lighthouse og WAVE. Begge testene viste gode resultater, men vi identifiserte noen forbedringsområder:</p>
             <ul>
-                <li>Oppdatering av <code>alt</code>-tekster for bilder for å gjøre dem mer beskrivende.</li>
-                <li>Optimalisering av kontrastnivå på knapper og tekst.</li>
+                <li>
+                    For eksempel ...
+                </li>
             </ul>
             <img src="lighthouse-results.png" alt="Skjermbilde av Lighthouse-testen">
         </section>
@@ -141,14 +141,22 @@ footer {
             <h2>Fremtidige forbedringer</h2>
             <p>Selv om nettstedet allerede oppfyller mange tilgjengelighetsstandarder, er det noen forbedringer som kan implementeres i fremtiden:</p>
             <ul>
-                <li>Støtte for flere språk ved hjelp av <code>lang</code>-attributtet i HTML.</li>
+                <li>Støtte for flere språk ved hjelp av lang-attributtet i HTML.</li>
                 <li>Ytterligere tester med ulike skjermlesere som NVDA og VoiceOver.</li>
                 <li>Kontinuerlig brukertesting for å få tilbakemeldinger fra ekte brukere.</li>
             </ul>
         </section>
     </main>
-    <footer>
-        <p>&copy; ..</p>
+    <footer id="footer-OsloMet">
+        <h3>Hold deg oppdatert på hva som skjer på campus <button>Abonner</button></h3>
+        <h4>OSLO METROPOLITIAN UNIVERSITY</h4>
+        <p>STORBYUNIVERSITETET</p>
+        <p>Postboks 4, St. Olavs plass</p>
+        <p>0130 Oslo</p>
+        <p>Tlf.: 67 23 50 00 </p>
+        <p>E-post: post@oslomet.no</p>
+        <img src="bilder/oslomet-logo-gul.webp" class="footer-bilde" alt="OsloMet logo"> 
     </footer>
+    
 </body>
 </html>
