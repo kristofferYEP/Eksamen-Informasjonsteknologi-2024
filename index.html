@@ -9,20 +9,16 @@
 </head>
 
 <body>
-
-    <body>
         <section class="header-index">
-            <!-- Det store bildet -->
+            <!-- Kode for det store bildet -->
             <img src="bilder/oslomet-logo-gul.webp" alt="Logo oppe til venstre">
 
             <div class="text-overskrift">
-                <h1>
-                    Matematisk Modellering og Datavitenskap
-                </h1>
+                <h1>Matematisk Modellering og Datavitenskap</h1>
             </div>
         </section>
 
-        <!-- Navigasjonsbaren plassert under bildet -->
+        <!-- Navigasjonsbaren som er plassert under bildet -->
         <header class="navbar-lenker">
             <nav>
                 <ul>
@@ -35,237 +31,227 @@
         </header>
         </section>
 
+        <!-- Studieinformasjon -->
         <main>
-            <section class="intro">
-                <h2>Studieinformasjon</h2>
-                <ul>
-                    <li><strong>Studiested:</strong> Pilestredet i Oslo</li>
-                    <li><strong>Varighet:</strong> 3 år</li>
-                    <li><strong>Omfang:</strong> Heltid</li>
-                    <li><strong>Studiepoeng:</strong> 180</li>
-                    <li><strong>Studiestart:</strong> August</li>
-                    <li><strong>Undervisningsspråk:</strong> Norsk og Engelsk</li>
-                    <li><strong>Studieplasser:</strong> 40</li>
-                </ul>
-                <p>Få innsikt i matematiske modeller og datadrevne metoder som kan løse mange praktiske og
-                    samfunnsnyttige
-                    oppgaver.</p>
+            <section class="accordion-section">
+                <button class="accordion-toggle" onclick="toggleAccordion(this)">Studieinformasjon</button>
+                <section class="accordion-content">
+                    <ul>
+                        <li><strong>Studiested:</strong> Pilestredet i Oslo</li>
+                        <li><strong>Varighet:</strong> 3 år</li>
+                        <li><strong>Omfang:</strong> Heltid</li>
+                        <li><strong>Studiepoeng:</strong> 180</li>
+                        <li><strong>Studiestart:</strong> August</li>
+                        <li><strong>Undervisningsspråk:</strong> Norsk og Engelsk</li>
+                        <li><strong>Studieplasser:</strong> 40</li>
+                    </ul>
+                    <p>Få innsikt i matematiske modeller og datadrevne metoder som kan løse mange praktiske og samfunnsnyttige oppgaver.</p>
+                </section>
             </section>
 
-            <section class="admission">
-                <h2>Opptakskrav og Poeng</h2>
-                <ul>
-                    <li>Generell studiekompetanse eller oppfylle kravene til realkompetanse</li>
-                    <li>Matematikk R1 og R2</li>
-                    <li>Fysikk 1</li>
-                </ul>
-                <p><strong>Søknadsfrister:</strong></p>
-                <ul>
-                    <li>Ordinær søknadsfrist: 15. april</li>
-                    <li>Frist for enkelte søkere: 1. mars</li>
-                </ul>
+            <!-- Opptakskrav og poeng -->
+            <section class="accordion-section">
+                <button class="accordion-toggle" onclick="toggleAccordion(this)">Opptakskrav og poeng</button>
+                <section class="accordion-content">
+                    <p>For å bli tatt opp til studiet, må du oppfylle følgende krav:</p>
+                    <ul>
+                        <li><strong>Generell studiekompetanse</strong> eller tilsvarende realkompetanse.</li>
+                        <li><strong>Konkurransepoeng:</strong> Minimum 45 poeng for opptak.</li>
+                        <li>Spesielle krav som matematikk (R1) og/eller fysikk kan være nødvendige for enkelte studieretninger.</li>
+                    </ul>
+                </section>
             </section>
 
-            <section class="learning">
-                <h2>Hva lærer du?</h2>
-                <p>Bachelor i matematisk modellering og datavitenskap kobler sammen matematikk, informatikk, fysikk
-                    og
-                    statistikk. Du får innsikt i matematiske modeller som brukes i praktisk problemløsning blant
-                    annet i
-                    medisinsk kjemi, biologiske prosesser og ulike samfunnssystemer.</p>
+            <!-- Hva lærer du? -->
+            <section class="accordion-section">
+                <button class="accordion-toggle" onclick="toggleAccordion(this)">Hva lærer du?</button>
+                <section class="accordion-content">
+                    <p>Gjennom dette studiet vil du få:</p>
+                    <ul>
+                        <li>Grunnleggende ferdigheter i programmering og datateknologi.</li>
+                        <li>En dypere forståelse for hvordan systemer utvikles og brukes.</li>
+                        <li>Kunnskaper om moderne teknologiske verktøy og metoder.</li>
+                    </ul>
+                    <p>Studiet legger også vekt på gruppearbeid, problemløsing og kommunikasjonsevner.</p>
+                </section>
             </section>
 
-            <section class="structure">
-                <h2>Studiets oppbygging</h2>
-                <h3>1. studieår</h3>
-                <h4>1. semester</h4>
+            <!-- Studiets oppbygging med sub klasser for vært år -->
+            <section class="accordion-section">
+                <button class="accordion-toggle" onclick="toggleAccordion(this)">Studiets oppbygging</button>
+                <section class="accordion-content">
 
-                <ul>
-                    <li>Diskret matematikk - DAPE1300 - 10 stp.</li>
-                    <li>Programmering - DAPE1400 - 10 stp.</li>
-                    <li>Teknologi og samfunn for programmerere - DATA1100 - 5 stp.</li>
-                    <li>Innføring i modeller og beregninger - MAMO1100 - 5 stp.</li>
-                </ul>
+                    <!-- studieår 1 -->
+                    <section class="sub-accordion">
+                        <button class="accordion-toggle" onclick="toggleAccordion(this)">1. studieår</button>
+                        <section class="sub-accordion-content">
+                            <h4>1. semester</h4>
+                            <ul>
+                                <li>Diskret matematikk - DAPE1300 - 10 stp.</li>
+                                <li>Programmering - DAPE1400 - 10 stp.</li>
+                                <li>Teknologi og samfunn for programmerere - DATA1100 - 5 stp.</li>
+                                <li>Innføring i modeller og beregninger - MAMO1100 - 5 stp.</li>
+                            </ul>
+                            <h4>2. semester</h4>
+                            <ul>
+                                <li>Matematikk 1000 - DAFE1000 - 10 stp.</li>
+                                <li>Fysikk og kjemi - DAPE2101 - 10 stp.</li>
+                                <li>Databaser - DATA1500 - 10 stp.</li>
+                            </ul>
+                        </section>
+                    </section>
 
-                <h4>2. semester</h4>
-                <ul>
-                    <li>Matematikk 1000 - DAFE1000 - 10 stp.</li>
-                    <li>Fysikk og kjemi - DAPE2101 - 10 stp.</li>
-                    <li>Databaser - DATA1500 - 10 stp.</li>
-                </ul>
+                    <!-- Studie år 2 -->
+                    <section class="sub-accordion">
+                        <button class="accordion-toggle" onclick="toggleAccordion(this)">2. studieår</button>
+                        <section class="sub-accordion-content">
+                            <h4>3. semester</h4>
+                            <ul>
+                                <li>Matematikk 2000 med statistikk - DAPE2000 - 10 stp.</li>
+                                <li>Moderne fysikk - MAMO2100 - 10 stp.</li>
+                            </ul>
+                            <h4>4. semester</h4>
+                            <ul>
+                                <li>Matematikk 4000 - DAVE3705 - 10 stp.</li>
+                                <li>Emnegruppe: Matematikk og fysikk</li>
+                                <ul>
+                                    <li>Lineær algebra og introduksjon til gruppeteori - MAMO2300 - 10 stp.</li>
+                                    <li>Termodynamikk og statistisk fysikk - MAMO2400 - 10 stp.</li>
+                                    <li>Symmetrier og algebraiske strukturer - MAMO2500 - 10 stp.</li>
+                                </ul>
+                            </ul>
+                        </section>
+                    </section>
 
-                <h3>2. studieår</h3>
-                <h4>3. semester</h4>
+                    <!-- Studie år 3 -->
+                    <section class="sub-accordion">
+                        <button class="accordion-toggle" onclick="toggleAccordion(this)">3. studieår</button>
+                        <section class="sub-accordion-content">
+                            <h4>5. semester</h4>
+                            <ul>
+                                <li>Matematikk 3000 - DAVE3700 - 10 stp.</li>
+                                <li>Emnegruppe: Matematikk og fysikk</li>
+                                <ul>
+                                    <li>Reell analyse - MAMO3300 - 10 stp.</li>
+                                    <li>Introduksjon til IT-forskning - DATA3730 - 10 stp.</li>
+                                    <li>Introduction to Data Science with Scripting - DATA3800 - 10 stp.</li>
+                                </ul>
+                            </ul>
+                            <h4>6. semester</h4>
+                            <ul>
+                                <li>Bacheloroppgave - DATA3900 - 20 stp.</li>
+                                <li>Testing av programvare - ADTS2310 - 10 stp.</li>
+                            </ul>
+                        </section>
+                    </section>
+                </section>
+            </section>
+            
+            <!-- Studie sted og sub klasser/info bokser -->
+            <section class="accordion-section">
+                <button class="accordion-toggle" onclick="toggleAccordion(this)">Studiested</button>
+                <section class="accordion-content">
 
-                <ul>
-                    <li>Matematikk 2000 med statistikk - DAPE2000 - 10 stp.</li>
-                    <li>Moderne fysikk - MAMO2100 - 10 stp.</li>
-                </ul>
+                    <!-- Adresse -->
+                    <section class="sub-accordion">
+                        <button class="accordion-toggle" onclick="toggleAccordion(this)">Adresse</button>
+                        <section class="sub-accordion-content">
+                            <p>OsloMet, Pilestredet 35, 0166 Oslo</p>
+                            <a href="https://www.google.com/maps?q=OsloMet+Pilestredet+35"> Se i Google Maps</a>
+                            <a href="https://use.mazemap.com/#v=1&campusid=53&zlevel=1&center=10.733352,59.921070&zoom=18.3">Bygningsoversikt i MazeMap</a>
+                        </section>
+                    </section>
 
-                <h4>4. semester</h4>
+                    <!-- Hovedresepsjon -->
+                    <section class="sub-accordion">
+                        <button class="accordion-toggle" onclick="toggleAccordion(this)">Hovedresepsjon</button>
+                        <section class="sub-accordion-content">
+                            <p>Telefon: 67 23 60 00</p>
+                            <p>Åpningstider: Mandag–Fredag, 08:00–16:00</p>
+                            <a href="https://www.google.com/maps?q=OsloMet+Pilestredet+46" target="_blank" rel="noopener noreferrer">Pilestredet 46</a>
+                        </section>
+                    </section>
 
-                <ul>
-                    <li>Matematikk 4000 - DAVE3705 - 10 stp.</li>
-                </ul>
-
-                <h4>Emnegruppe: Matematikk og fysikk</h4>
-
-                <h5>3. semester</h5>
-
-                <ul>
-                    <li>Lineær algebra og introduksjon til gruppeteori - MAMO2300 - 10 stp.</li>
-                </ul>
-
-                <h5>4. semester</h5>
-
-                <ul>
-                    <li>Termodynamikk og statistisk fysikk - MAMO2400 - 10 stp.</li>
-                    <li>Symmetrier og algebraiske strukturer - MAMO2500 - 10 stp.</li>
-                </ul>
-
-                <h4>Emnegruppe: Statistiske og datadrevne metoder</h4>
-
-                <h5>3. semester</h5>
-
-                <ul>
-                    <li>Algoritmer og datastrukturer - DATS2300 - 10 stp.</li>
-                </ul>
-
-                <h5>4. semester</h5>
-
-                <ul>
-                    <li>Statistisk analyse - MAMO3100 - 10 stp.</li>
-                    <li>Visualisering - ADSE3200 - 10 stp.</li>
-                    <li>Avansert modellering og beregninger - MAMO2200 - 10 stp.</li>
-                </ul>
-
-                <h4>Emnegruppe: Vitenskapelige beregninger</h4>
-
-                <h5>3. semester</h5>
-
-                <ul>
-                    <li>Algoritmer og datastrukturer - DATS2300 - 10 stp.</li>
-                </ul>
-
-                <h5>4. semester</h5>
-
-                <ul>
-                    <li>Ressurseffektive programmer - DAVE3606 - 10 stp.</li>
-                    <li>Avansert modellering og beregninger - MAMO2200 - 10 stp.</li>
-                </ul>
-
-                <h3>3. studieår</h3>
-
-                <h4>5. semester</h4>
-
-                <ul>
-                    <li>Matematikk 3000 - DAVE3700 - 10 stp.</li>
-                </ul>
-
-                <h4>6. semester</h4>
-
-                <ul>
-                    <li>Bacheloroppgave - DATA3900 - 20 stp.</li>
-                </ul>
-
-                <h4>Emnegruppe: Matematikk og fysikk</h4>
-
-                <h5>5. semester</h5>
-
-                <ul>
-                    <li>Reell analyse - MAMO3300 - 10 stp.</li>
-                    <li>Introduksjon til IT-forskning - DATA3730 - 10 stp.</li>
-                    <li>Introduction to Data Science with Scripting - DATA3800 - 10 stp.</li>
-                    <li>Datasikkerhet - ITPE3100 - 10 stp.</li>
-                    <li>Simulering og visualisering - MAMO3200 - 10 stp.</li>
-                </ul>
-
-                <h5>6. semester</h5>
-
-                <ul>
-                    <li>Testing av programvare - ADTS2310 - 10 stp.</li>
-                    <li>Datanettverk og skytjenester - DATA2410 - 10 stp.</li>
-                    <li>Ressurseffektive programmer - DAVE3606 - 10 stp.</li>
-                    <li>Avansert modellering og beregninger - MAMO2200 - 10 stp.</li>
-                </ul>
-
-                <h4>Emnegruppe: Statistiske og datadrevne metoder</h4>
-
-                <h5>5. semester</h5>
-
-                <ul>
-                    <li>Introduksjon til Kunstig Intelligens - DAVE3625 - 10 stp.</li>
-                    <li>Anvendt kunstig intelligens og data science prosjekt - DATA3750 - 10 stp.</li>
-                </ul>
-
-                <h4>Emnegruppe: Vitenskapelige beregninger</h4>
-
-                <h5>5. semester</h5>
-
-                <ul>
-                    <li>Simulering og visualisering - MAMO3200 - 10 stp.</li>
-                    <li>Reell analyse - MAMO3300 - 10 stp.</li>
-                </ul>
-
-                <h5>6. semester</h5>
-
-                <ul>
-                    <li>Visualisering - ADSE3200 - 10 stp.</li>
-                    <li>Symmetrier og algebraiske strukturer - MAMO2500 - 10 stp.</li>
-                </ul>
+                    <!-- Studietorget -->
+                    <section class="sub-accordion">
+                        <button class="accordion-toggle" onclick="toggleAccordion(this)">Studenttorget</button>
+                        <section class="sub-accordion-content">
+                            <p>Telefon: 67 23 77 78</p>
+                            <p>Tilgjengelig for studenter: Mandag–Fredag, 09:00–15:00</p>
+                            <a href="https://www.google.com/maps?q=OsloMet+Pilestredet+52" target="_blank" rel="noopener noreferrer">Pilestredet 52</a>
+                        </section>
+                    </section>
+                </section>
+            </section>
+            
+            <!-- Spørsmål om utdanningen? -->
+            <section class="accordion-section">
+                <button class="accordion-toggle" onclick="toggleAccordion(this)">Spørsmål om utdanningen?</button>
+                <section class="accordion-content">
+                    <p>Har du spørsmål om utdanningen, kontakt oss gjennom vårt <a href="contact.html">kontaktskjema</a>.
+                    </p>
+                    <h3>Faglig leder</h3>
+                    <p><strong>Kristoffer Herland Hellton</strong><br>
+                        Førsteamanuensis<br>
+                        Telefon: +47 672 37 240<br>
+                        E-post: <a href="mailto:kristoffer.hellton@oslomet.no">kristoffer.hellton@oslomet.no</a>
+                    </p>
+                </section>
             </section>
 
-            <section class="location">
-                <h2>Studiested</h2>
-                <p>Studiested Pilestredet</p>
+            <!-- Du er kanskje også interessert i disse? -->
+            <section class="accordion-section">
+                <button class="accordion-toggle" onclick="toggleAccordion(this)">Du er kanskje også interessert i disse?</button>
+                <section class="accordion-content">
+                    <ul>
+                        <li>Anvendt datateknologi – Bachelorprogram, 3 år, Pilestredet i Oslo, Heltid</li>
+                        <li>Bioteknologi- og kjemiingeniør – Bachelorprogram, 3 år, Pilestredet i Oslo, Heltid</li>
+                        <li>Byggingeniør – Bachelorprogram, 3 år, Pilestredet i Oslo, Heltid</li>
+                        <li>Dataingeniør – Bachelorprogram, 3 år, Pilestredet i Oslo, Heltid</li>
+                        <li>Elektronikkingeniør – Bachelorprogram, 3 år, Pilestredet i Oslo, Heltid</li>
+                        <li>Informasjonsteknologi – Bachelorprogram, 3 år, Pilestredet i Oslo, Heltid</li>
+                        <li>Maskiningeniør – Bachelorprogram, 3 år, Pilestredet i Oslo, Heltid</li>
+                        <li>Tre-terminsordning til ingeniørutdanning – Bachelorprogram, 3 år, Pilestredet i Oslo, Heltid
+                        </li>
+                    </ul>
+                </section>
             </section>
 
-            <section class="contact">
-                <h2>Spørsmål om utdanningen?</h2>
-                <p>Har du spørsmål om utdanningen, kontakt oss gjennom vårt <a href="contact.html">kontaktskjema</a>.
-                </p>
-                <h3>Faglig leder</h3>
-                <p><strong>Kristoffer Herland Hellton</strong><br>
-                    Førsteamanuensis<br>
-                    Telefon: +47 672 37 240<br>
-                    E-post: <a href="mailto:kristoffer.hellton@oslomet.no">kristoffer.hellton@oslomet.no</a>
-                </p>
+            <!-- Studenthistorier -->
+            <section class="accordion-section">
+                <button class="accordion-toggle" onclick="toggleAccordion(this)">Studenthistorier</button>
+                <section class="accordion-content">
+                    <p><img src="bilder.jpg" alt="bilde skal være her"></p>
+                    <h3>Teknologi og design</h3>
+                    <p>Spå fremtiden med matematikk og datavitenskap. Har du lyst til å finne ut hva som vil skje i fremtiden?
+                        Lær å bruke verktøy for å forutsi alt fra været og strømprisene til utviklingen i boligmarkedet.
+                    </p>
+                    <p><a href="bilder.html">Flere studenthistorier</a></p>
+                </section>
             </section>
-
-            <section class="other-studies">
-                <h2>Du er kanskje også interessert i disse?</h2>
-                <ul>
-                    <li>Anvendt datateknologi – Bachelorprogram, 3 år, Pilestredet i Oslo, Heltid</li>
-                    <li>Bioteknologi- og kjemiingeniør – Bachelorprogram, 3 år, Pilestredet i Oslo, Heltid</li>
-                    <li>Byggingeniør – Bachelorprogram, 3 år, Pilestredet i Oslo, Heltid</li>
-                    <li>Dataingeniør – Bachelorprogram, 3 år, Pilestredet i Oslo, Heltid</li>
-                    <li>Elektronikkingeniør – Bachelorprogram, 3 år, Pilestredet i Oslo, Heltid</li>
-                    <li>Informasjonsteknologi – Bachelorprogram, 3 år, Pilestredet i Oslo, Heltid</li>
-                    <li>Maskiningeniør – Bachelorprogram, 3 år, Pilestredet i Oslo, Heltid</li>
-                    <li>Tre-terminsordning til ingeniørutdanning – Bachelorprogram, 3 år, Pilestredet i Oslo, Heltid
-                    </li>
-                </ul>
-            </section>
-
-            <section class="student-stories">
-                <h2>Studenthistorier</h2>
-                <p><img src="bilder.jpg" alt="bilde skal være her"></p>
-                <h3>Teknologi og design</h3>
-                <p>Spå fremtiden med matematikk og datavitenskap. Har du lyst til å finne ut hva som vil skje i
-                    fremtiden?
-                    Lær å bruke verktøy for å forutsi alt fra været og strømprisene til utviklingen i boligmarkedet.
-                </p>
-                <p><a href="bilder.html">Flere studenthistorier</a></p>
-            </section>
+            
+            
+            <!-- Footer -->
+            <footer id="footer-OsloMet">
+                <h3>Hold deg oppdatert på hva som skjer på campus <button>Abonner</button></h3>
+                <h4>OSLO METROPOLITIAN UNIVERSITY</h4>
+                <p>STORBYUNIVERSITETET</p>
+                <p>Postboks 4, St. Olavs plass</p>
+                <p>0130 Oslo</p>
+                <p>Tlf.: 67 23 50 00 </p>
+                <p>E-post: post@oslomet.no</p>
+                <img src="bilder/oslomet-logo-gul.webp" class="footer-bilde" alt="OsloMet logo"> 
+            </footer>
         </main>
-        <footer id="footer-OsloMet">
-            <h3>Hold deg oppdatert på hva som skjer på campus <button> Abboner</button></h3>
-            <h4>OSLO METROPOLITIAN UNIVERSITY</h4>
-            <p>STORBYUNIVERSITETET</p>
-            <p>Postboks 4, St. Olavs plass</p>
-            <p>0130 Oslo</p>
-            <p>Tlf.: 67 23 50 00 </p>
-            <p>E-post: post@oslomet.no</p>
-            <img src="bilder/oslomet-logo-gul.webp" class="footer-bilde" alt="OsloMet logo" </footer>
-
+    </body>
 </html>
+
+<!-- Javascript kode for knapper og subknapper -->
+<script>
+    // Bytter display style mellom åpen og lukket  
+    function toggleAccordion(button) {
+        const content = button.nextElementSibling;
+        button.classList.toggle('active');
+        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
+</script>

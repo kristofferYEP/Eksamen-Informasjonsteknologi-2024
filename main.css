@@ -25,9 +25,50 @@ body {
     text-shadow: 2px 2px 4px #000000;
 }
 
-.text-overskrift h1 {
-    font-size: 5em;
-    letter-spacing: 0.1em;
+.text-overskrift h1 { 
+    font-size: 6em; letter-spacing: 0.1em; 
+}
+
+/* Justerer header bilde og tekst etter skjermstørrelse: */
+@media (max-width: 1200px) {
+    .header-index { 
+        min-height: 80vh;
+    }
+
+    .text-overskrift h1 {
+        
+        font-size: 5em; 
+    }
+}
+
+@media (max-width: 900px) {
+    .header-index { 
+        min-height: 70vh;
+    }
+
+    .text-overskrift h1 {
+        font-size: 4em; 
+    }
+}
+
+@media (max-width: 600px) {
+    .header-index { 
+        min-height: 40vh;
+    }
+
+    .text-overskrift h1 {
+        font-size: 3em; 
+    }
+}
+
+@media (max-width: 400px) {
+    .header-index { 
+        min-height: 30vh; 
+    }
+
+    .text-overskrift h1 {
+        font-size: 2em; 
+    }
 }
 
 /* Stilen for logoen øverst til venstre */
@@ -72,6 +113,39 @@ body {
     border-radius: 5px;
 }
 
+nav {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+    margin-bottom: 30px;
+}
+
+nav ul li {
+    font-weight: bold;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 600px) {
+    .navbar-lenker nav ul {
+        display: block;
+        text-align: center;
+    }
+
+    .navbar-lenker nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .text-overskrift h1 {
+        font-size: 2em; /* Justerer fontstørrelsen for små skjermer */
+    }
+
+    .header-index img {
+        width: 80px;
+    }
+}
+
+
 
 .tittleboks {
     display: flex;
@@ -101,18 +175,6 @@ body {
     padding: 20px;
 }
 
-nav {
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
-    padding: 15px 0;
-    margin-bottom: 30px;
-}
-
-nav ul li {
-    font-weight: bold;
-}
-
-
 main h2 {
     color: #006bb3;
     margin-bottom: 15px;
@@ -133,19 +195,16 @@ ul li {
 /* Forbedret footer styling */
 footer {
     background-color: #004d80;
-    /* Litt mørkere for kontrast */
     padding: 20px;
     text-align: left;
     color: #ddd;
     border-top: 3px solid #003366;
-    /* Legger til en toppgrense for effekt */
 }
 
 footer h3 {
     color: white;
     font-size: 1.2em;
     margin-bottom: 10px;
-    /* Gir litt avstand fra underliggende elementer */
     display: flex;
     align-items: center;
 }
@@ -161,10 +220,8 @@ footer p {
     padding-left: 2%;
 }
 
-/* Styling for button */
 footer button {
     background-color: #ffaa00;
-    /* Farge som står ut og gir kontrast */
     color: #004d80;
     border: none;
     border-radius: 5px;
@@ -172,21 +229,103 @@ footer button {
     cursor: pointer;
     font-size: 1em;
     margin-left: 15px;
-    /* Liten avstand fra teksten */
     transition: background-color 0.3s, transform 0.3s;
-    /* Smooth hover-effekter */
 }
 
 footer button:hover {
     background-color: #ffcc33;
-    /* Lysere variant ved hover */
     transform: scale(1.05);
-    /* Liten zoom-effekt ved hover */
 }
 
 footer button:active {
     background-color: #e69500;
-    /* Mørkere farge ved klikk */
     transform: scale(0.98);
-    /* Liten nedtrykt effekt ved klikk */
+}
+
+/* Justerer bilde størrelse etter skjermstørrelse til bruker*/
+.footer-bilde {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Sentere bildet */
+}
+
+
+.accordion-section {
+    margin-bottom: 20px;
+}
+
+.accordion-toggle {
+    background-color: #006bb3;
+    color: white;
+    font-size: 1.2em;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    transition: background-color 0.3s;
+}
+
+.accordion-toggle:hover {
+    background-color: #004d80;
+}
+
+.accordion-content {
+    display: none;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.sub-accordion {
+    margin: 10px 0;
+}
+
+.sub-accordion-toggle {
+    width: 100%;
+    background-color: #006bb3;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1em;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.sub-accordion-toggle:hover {
+    background-color: #0088cc;
+}
+
+.sub-accordion-content {
+    display: none;
+    padding: 10px 15px;
+    background-color: #eaf3fb;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.sub-accordion-content h4 {
+    margin-top: 10px;
+    color: #004d80;
+}
+
+.sub-accordion-content ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.sub-accordion-content ul ul {
+    padding-left: 20px;
+    list-style: circle;
+}
+
+.sub-accordion-content a {
+    display: block;
 }
