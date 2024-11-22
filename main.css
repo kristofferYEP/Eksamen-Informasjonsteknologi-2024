@@ -16,7 +16,7 @@ body {
 /* Stilen for overskriften på bildet */
 .text-overskrift {
     width: 90%;
-    color: lightblue;
+    color: #d7d715;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -81,49 +81,89 @@ body {
 }
 
 /* Navigasjonsbaren */
-.navbar-lenker {
-    display: flex;
-    justify-content: center;
-    background-color: lightgray;
+nav {
+    background-color: #ffffff;
+    border-bottom: 1px solid #ffffff;
     padding: 15px 0;
+    width: 100%; /* Strekker seg over hele skjermen */
+    margin: 0 auto; /* Sentrer innholdet horisontalt */
+    text-align: center; /* Sentraliserer menyen i midten */
 }
 
-.navbar-lenker nav ul {
+nav ul {
+    display: inline-block; /* Endrer display til inline-block for å sentrere innholdet */
     list-style: none;
-    display: flex;
-    gap: 20px;
     padding: 0;
     margin: 0;
 }
 
-.navbar-lenker nav ul li {
-    display: inline-block;
+nav ul li {
+    display: inline;
+    font-weight: bold;
+    margin: 0 10px; /* Litt margin mellom menyboksene */
 }
 
-.navbar-lenker nav ul li a {
-    color: #006bb3;
+nav ul li a {
     text-decoration: none;
-    font-size: 1.2em;
-    font-family: Arial, sans-serif;
-    padding: 8px 16px;
+    color: #000000;
+    padding: 10px 15px;
     transition: background-color 0.3s;
-}
-
-.navbar-lenker nav ul li a:hover {
-    background-color: darkorange;
     border-radius: 5px;
 }
 
-nav {
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
-    padding: 15px 0;
-    margin-bottom: 30px;
+nav ul li a:hover {
+    background-color: #aaaaaa; /* Litt mørkere bakgrunn ved hover */
 }
 
-nav ul li {
-    font-weight: bold;
+
+/* Studieinformasjon Styling Start */
+
+.Studieinformasjon {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 100%;
+    text-align: center;
 }
+
+.Studieinformasjon h2 {
+    color: black;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.Studieinformasjon p {
+    color: #333;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.Studieinformasjon ul {
+    list-style-type: none;
+}
+
+.Studie-video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.Studie-video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    border: none;
+}
+
+/* Studieinformasjon Styling Slutt */
 
 /* Media queries for responsiveness */
 @media (max-width: 600px) {
@@ -146,8 +186,6 @@ nav ul li {
         width: 80px;
     }
 }
-
-
 
 .tittleboks {
     display: flex;
@@ -211,8 +249,7 @@ footer h3 {
     align-items: center;
 }
 
-footer h4,
-footer p {
+footer h4, footer p {
     color: #f0f0f0;
     font-size: 1em;
     margin: 5px 0;
@@ -223,8 +260,8 @@ footer p {
 }
 
 footer button {
-    background-color: #ffaa00;
-    color: #004d80;
+    background-color: #ffdc00;
+    color: #000000;
     border: none;
     border-radius: 5px;
     padding: 10px 15px;
@@ -235,22 +272,23 @@ footer button {
 }
 
 footer button:hover {
-    background-color: #ffcc33;
+    background-color: #e69500;
     transform: scale(1.05);
 }
 
 footer button:active {
-    background-color: #e69500;
+    background-color: #ffdc00;
     transform: scale(0.98);
 }
 
 /* Justerer bilde størrelse etter skjermstørrelse til bruker*/
 .footer-bilde {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+    width: 150px;
+    max-width: 150px;
+    margin: -150px 40px 0 auto;
+    position: relative;
+
+    float: right;
     /* Sentere bildet */
 }
 
@@ -260,8 +298,8 @@ footer button:active {
 }
 
 .accordion-toggle {
-    background-color: #006bb3;
-    color: white;
+    background-color: #f9df38;
+    color: #000000;
     font-size: 1.2em;
     padding: 10px 15px;
     border: none;
@@ -273,13 +311,14 @@ footer button:active {
 }
 
 .accordion-toggle:hover {
-    background-color: #004d80;
+    background-color: #ddd;
+    color: #000000;
 }
 
 .accordion-content {
     display: none;
     padding: 30px;
-    background-color: #f9f9f9;
+    background-color: #ffffff;
     border: 1px solid #ddd;
     border-radius: 5px;
 }
@@ -290,7 +329,7 @@ footer button:active {
 
 .sub-accordion-toggle {
     width: 100%;
-    background-color: #006bb3;
+    background-color: #b9b900;
     color: white;
     border: none;
     padding: 10px;
@@ -302,13 +341,13 @@ footer button:active {
 }
 
 .sub-accordion-toggle:hover {
-    background-color: #0088cc;
+    background-color: #b9b900;
 }
 
 .sub-accordion-content {
     display: none;
     padding: 10px 15px;
-    background-color: #eaf3fb;
+    background-color: #ffffff;
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-top: 5px;
@@ -316,7 +355,7 @@ footer button:active {
 
 .sub-accordion-content h4 {
     margin-top: 10px;
-    color: #004d80;
+    color: #000000;
 }
 
 .sub-accordion-content ul {
@@ -330,5 +369,43 @@ footer button:active {
 }
 
 .sub-accordion-content a {
+    display: block;
+}
+
+/* Gjør at bidlet i spørsmål utdanning justerer seg dynamisk etter skjermstørrelse */
+.bilde-sporsmol-undanning {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.Studenthistorier {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 100%;
+    text-align: center;
+}
+
+.Studenthistorier h2 {
+    color: black;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.Studenthistorier p {
+    color: #333;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.Studenthistorier ul {
+    list-style-type: none;
+}
+
+.Studenthistorier img {
+    max-width: 100%;
+    height: auto;
     display: block;
 }
