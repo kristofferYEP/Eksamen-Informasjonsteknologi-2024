@@ -1,11 +1,264 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Accessibility</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #002e5d;
+    color: #fff;
+    padding: 2.5rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 1;
+    font-size: 40px;
+}
+
+/* Navigasjonsmeny */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #001d3a;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem 1.5rem;
+    display: block;
+    font-weight: bold;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    background-color: #003b6f;
+    border-radius: 4px;
+}
+
+
+/* Hovedinnhold */
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #0078d7;
+}
+
+/* Testresultater seksjon */
+.test-results-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* To kolonner */
+    gap: 20px; /* Mellomrom mellom elementene */
+    margin-top: 20px;
+}
+
+.test-results-grid div {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.test-results-grid img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.caption {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 5px;
+}
+
+/* Responsiv justering for små skjermer */
+@media (max-width: 768px) {
+    .test-results-grid {
+        grid-template-columns: 1fr; /* En kolonne for mindre skjermer */
+    }
+}
+
+
+
+/* Bilde */
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 1rem 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+  background-color: #002e5d; 
+  color: white;
+  padding: 20px;
+}
+
+.footer-content {
+  display: flex; /* Flexbox for horisontal layout */
+  justify-content: space-between; /* Spre innholdet horisontalt */
+  align-items: center; /* Sentrer vertikalt */
+  max-width: 1200px; /* Begrens bredde */
+  margin: 0 auto; /* Sentraliser innholdet */
+}
+
+.footer-text {
+  flex: 1; /* Teksten tar opp mesteparten av plassen */
+}
+
+.footer-logo img {
+  border: none;  
+  width: 250px; /* Begrens størrelsen på logoen */
+  height: auto;
+}
+
+/* Abonner-knappen */
+.subscribe-button {
+  display: inline-block;
+  background-color: #fbb034; /* Oransje */
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.subscribe-button:hover {
+  background-color: #d2912f; 
+}
+
+footer a {
+  color: #fbb034;
+  text-decoration: none;
+}
+
+
+@media (max-width: 600px) {
+  .footer-content {
+    flex-direction: column; /* Sett innholdet vertikalt på små skjermer */
+    text-align: center;
+  }
+}
+
+</style>
+
+
 <body>
+    <header>
+        <h1>Tilgjengelighet</h1>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="activity.html">Aktivitet</a></li>
+                <li><a href="accessibility.html" class="active">Tilgjengelighet</a></li>
+                <li><a href="github.html">GitHub</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Hva er tilgjengelighet?</h2>
+            <p>Tilgjengelighet på nettet handler om å sikre at alle brukere, inkludert personer med funksjonsnedsettelser, kan navigere og bruke nettstedet uten problemer.</p>
+            <p>Dette inkluderer brukere som benytter skjermlesere, navigerer kun med tastatur eller har utfordringer med fargesyn.</p>
+        </section>
+        <section>
+            <h2>Beste praksis for tilgjengelighet</h2>
+            <p>Her er noen grunnleggende prinsipper for å oppnå universelt design:</p>
+            <ul>
+                <li>Bruk av semantisk HTML for bedre skjermleserkompatibilitet.</li>
+                <li>Test nettstedets kontrastnivåer med verktøy som Contrast Checker.</li>
+                <li>Tilby tastaturnavigasjon for alle interaktive elementer.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Testresultater</h2>
+            <p>Vi testet tilgjengeligheten til dette nettstedet ved hjelp av Lighthouse og WAVE. Vi valgte disse to nettsidene fordi, ...</p>
+
+            <div class="test-results-grid">
+                <div>
+                    <img src="lighthouse-results1.png" alt="Lighthouse-test resultat 1">
+                    <p class="caption">Lighthouse-test: ...</p>
+                </div>
+                <div>
+                    <img src="lighthouse-results2.png" alt="Lighthouse-test resultat 2">
+                    <p class="caption">Lighthouse-test: ...</p>
+                </div>
+                <div>
+                    <img src="wave-results1.png" alt="WAVE-test resultat 1">
+                    <p class="caption">WAVE-test: ...</p>
+                </div>
+                <div>
+                    <img src="wave-results2.png" alt="WAVE-test resultat 2">
+                    <p class="caption">WAVE-test: ...</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Fremtidige forbedringer</h2>
+            <p>Selv om nettstedet allerede oppfyller mange tilgjengelighetsstandarder, er det noen forbedringer som kan implementeres i fremtiden:</p>
+            <ul>
+                <li>Støtte for flere språk ved hjelp av lang-attributtet i HTML.</li>
+                <li>Ytterligere tester med ulike skjermlesere som NVDA og VoiceOver.</li>
+                <li>Kontinuerlig brukertesting for å få tilbakemeldinger fra ekte brukere.</li>
+            </ul>
+        </section>
+    </main>
+    <footer id="footer-OsloMet">
+        <div class="footer-content">
+            <div class="footer-text">
+              <h3>Hold deg oppdatert på hva som skjer på campus</h3>
+              <a href="https://www.oslomet.no" class="subscribe-button">Abonner</a>
+              <h4>OSLO METROPOLITIAN UNIVERSITY</h4>
+              <p>STORBYUNIVERSITETET</p>
+              <p>Postboks 4, St. Olavs plass</p>
+              <p>0130 Oslo</p>
+              <p>Tlf.: 67 23 50 00</p>
+              <p>E-post: <a href="mailto:post@oslomet.no">post@oslomet.no</a></p>
+            </div>
+            <div class="footer-logo">
+              <img src="bilder/oslomet-logo-gul.webp" alt="OsloMet logo">
+            </div>
+        </div>
+    </footer>
     
 </body>
 </html>
