@@ -25,49 +25,50 @@ body {
     text-shadow: 2px 2px 4px #000000;
 }
 
-.text-overskrift h1 { 
-    font-size: 6em; letter-spacing: 0.1em; 
+.text-overskrift h1 {
+    font-size: 6em;
+    letter-spacing: 0.1em;
 }
 
 /* Justerer header bilde og tekst etter skjermstørrelse: */
 @media (max-width: 1200px) {
-    .header-index { 
+    .header-index {
         min-height: 80vh;
     }
 
     .text-overskrift h1 {
-        
-        font-size: 5em; 
+
+        font-size: 5em;
     }
 }
 
 @media (max-width: 900px) {
-    .header-index { 
+    .header-index {
         min-height: 70vh;
     }
 
     .text-overskrift h1 {
-        font-size: 4em; 
+        font-size: 4em;
     }
 }
 
 @media (max-width: 600px) {
-    .header-index { 
+    .header-index {
         min-height: 40vh;
     }
 
     .text-overskrift h1 {
-        font-size: 3em; 
+        font-size: 3em;
     }
 }
 
 @media (max-width: 400px) {
-    .header-index { 
-        min-height: 30vh; 
+    .header-index {
+        min-height: 30vh;
     }
 
     .text-overskrift h1 {
-        font-size: 2em; 
+        font-size: 2em;
     }
 }
 
@@ -137,7 +138,8 @@ nav ul li {
     }
 
     .text-overskrift h1 {
-        font-size: 2em; /* Justerer fontstørrelsen for små skjermer */
+        font-size: 2em;
+        /* Justerer fontstørrelsen for små skjermer */
     }
 
     .header-index img {
@@ -192,7 +194,7 @@ ul li {
     margin-bottom: 10px;
 }
 
-/* Forbedret footer styling */
+/* footer styling */
 footer {
     background-color: #004d80;
     padding: 20px;
@@ -248,7 +250,8 @@ footer button:active {
     max-width: 300px;
     height: auto;
     display: block;
-    margin: 0 auto; /* Sentere bildet */
+    margin: 0 auto;
+    /* Sentere bildet */
 }
 
 
