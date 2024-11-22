@@ -13,7 +13,8 @@ body {
 }
 
 header {
-    background-color: darkcyan;
+    background-color: #006666;
+    /* Mørkere cyan for bedre kontrast */
     color: white;
     padding: 20px;
     text-align: center;
@@ -25,7 +26,8 @@ header .container h1 {
 }
 
 nav {
-    background-color: darkcyan;
+    background-color: #006666;
+    /* Matchende farge med header */
     padding: 10px;
 }
 
@@ -97,15 +99,11 @@ section {
 
 .activity-card img {
     width: 150px;
-    /* Sett en fast bredde */
     height: 150px;
-    /* Sett en fast høyde */
     object-fit: contain;
-    /* Beholder proporsjonene på bildet */
     border-radius: 5px;
     margin-bottom: 15px;
 }
-
 
 .activity-card h2 {
     font-size: 1.5em;
@@ -120,8 +118,10 @@ section {
 .activity-button {
     display: block;
     padding: 10px 20px;
-    background-color: #57eeff;
-    color: black;
+    background-color: #007ea7;
+    /* Mørkere turkis for bedre kontrast */
+    color: white;
+    /* Bedre kontrast mot bakgrunnen */
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
