@@ -77,6 +77,45 @@ section h2 {
     color: #0078d7;
 }
 
+/* Testresultater seksjon */
+.test-results-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* To kolonner */
+    gap: 20px; /* Mellomrom mellom elementene */
+    margin-top: 20px;
+}
+
+.test-results-grid div {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.test-results-grid img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.caption {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 5px;
+}
+
+/* Responsiv justering for små skjermer */
+@media (max-width: 768px) {
+    .test-results-grid {
+        grid-template-columns: 1fr; /* En kolonne for mindre skjermer */
+    }
+}
+
+
+
 /* Bilde */
 img {
     max-width: 100%;
