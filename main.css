@@ -146,8 +146,7 @@ nav ul li a:hover {
 .Studie-video-container {
     position: relative;
     width: 100%;
-    padding-bottom: 56.25%;
-    /* 16:9 aspect ratio */
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
     height: 0;
     margin: 20px auto;
     border-radius: 8px;
@@ -370,5 +369,43 @@ footer button:active {
 }
 
 .sub-accordion-content a {
+    display: block;
+}
+
+/* Gjør at bidlet i spørsmål utdanning justerer seg dynamisk etter skjermstørrelse */
+.bilde-sporsmol-undanning {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.Studenthistorier {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 100%;
+    text-align: center;
+}
+
+.Studenthistorier h2 {
+    color: black;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.Studenthistorier p {
+    color: #333;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.Studenthistorier ul {
+    list-style-type: none;
+}
+
+.Studenthistorier img {
+    max-width: 100%;
+    height: auto;
     display: block;
 }
