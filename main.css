@@ -1,8 +1,18 @@
-body {
+/* === Global Reset og Grunnstil === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
 
-/* Generell CSS for header-seksjonen */
+body {
+    background-color: #f3f3f3;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* === Header-seksjon === */
 .header-index {
     min-height: 100vh;
     width: 100%;
@@ -13,7 +23,14 @@ body {
     margin: 0;
 }
 
-/* Stilen for overskriften på bildet */
+.header-index img {
+    width: 100px;
+    position: absolute;
+    top: 4%;
+    left: 5%;
+}
+
+/* Overskrift over bildet */
 .text-overskrift {
     width: 90%;
     color: #d7d715;
@@ -30,14 +47,13 @@ body {
     letter-spacing: 0.1em;
 }
 
-/* Justerer header bilde og tekst etter skjermstørrelse: */
+/* Responsiv header-tekst og bilde */
 @media (max-width: 1200px) {
     .header-index {
         min-height: 80vh;
     }
 
     .text-overskrift h1 {
-
         font-size: 5em;
     }
 }
@@ -60,6 +76,10 @@ body {
     .text-overskrift h1 {
         font-size: 3em;
     }
+
+    .header-index img {
+        width: 80px;
+    }
 }
 
 @media (max-width: 400px) {
@@ -72,26 +92,18 @@ body {
     }
 }
 
-/* Stilen for logoen øverst til venstre */
-.header-index img {
-    width: 100px;
-    position: absolute;
-    top: 4%;
-    left: 5%;
-}
-
-/* Navigasjonsbaren */
+/* === Navigasjonsmeny === */
 nav {
     background-color: #ffffff;
     border-bottom: 1px solid #ffffff;
     padding: 15px 0;
-    width: 100%; /* Strekker seg over hele skjermen */
-    margin: 0 auto; /* Sentrer innholdet horisontalt */
-    text-align: center; /* Sentraliserer menyen i midten */
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 nav ul {
-    display: inline-block; /* Endrer display til inline-block for å sentrere innholdet */
+    display: inline-block;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -100,7 +112,7 @@ nav ul {
 nav ul li {
     display: inline;
     font-weight: bold;
-    margin: 0 10px; /* Litt margin mellom menyboksene */
+    margin: 0 10px;
 }
 
 nav ul li a {
@@ -112,12 +124,10 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #aaaaaa; /* Litt mørkere bakgrunn ved hover */
+    background-color: #aaaaaa;
 }
 
-
-/* Studieinformasjon Styling Start */
-
+/* === Studieinformasjon === */
 .Studieinformasjon {
     background-color: #ffffff;
     padding: 20px;
@@ -143,10 +153,11 @@ nav ul li a:hover {
     list-style-type: none;
 }
 
+/* Studie-video container */
 .Studie-video-container {
     position: relative;
     width: 100%;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    padding-bottom: 56.25%;
     height: 0;
     margin: 20px auto;
     border-radius: 8px;
@@ -163,76 +174,126 @@ nav ul li a:hover {
     border: none;
 }
 
-/* Studieinformasjon Styling Slutt */
-
-/* Media queries for responsiveness */
-@media (max-width: 600px) {
-    .navbar-lenker nav ul {
-        display: block;
-        text-align: center;
-    }
-
-    .navbar-lenker nav ul li {
-        display: block;
-        margin-bottom: 10px;
-    }
-
-    .text-overskrift h1 {
-        font-size: 2em;
-        /* Justerer fontstørrelsen for små skjermer */
-    }
-
-    .header-index img {
-        width: 80px;
-    }
-}
-
-.tittleboks {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-    position: relative;
-}
-
-/* Resetting and global styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-body {
-    background-color: #f3f3f3;
-    color: #333;
-    line-height: 1.6;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
+/* === Studenthistorier === */
+.Studenthistorier {
+    background-color: #ffffff;
     padding: 20px;
-}
-
-main h2 {
-    color: #006bb3;
-    margin-bottom: 15px;
-}
-
-section {
-    background-color: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
     border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    margin: 20px auto;
+    max-width: 100%;
+    text-align: center;
 }
 
-ul li {
+.Studenthistorier h2 {
+    color: black;
+    font-size: 2em;
     margin-bottom: 10px;
 }
 
-/* footer styling */
+.Studenthistorier p {
+    color: #333;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.Studenthistorier img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* === Styling for Utvidbare Seksjoner === */
+
+/* Container for utvidbare seksjoner */
+.utvidbar-seksjon {
+    background-color: #ffffff; 
+    padding: 10px; 
+    border-radius: 8px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    margin: 20px auto; 
+    width: 100%; 
+}
+
+/* Knapp for hovedseksjon */
+.utvidbar-knapp {
+    background-color: #f9df38;
+    color: #000000;
+    font-size: 1.2em;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    transition: background-color 0.3s;
+}
+
+/* Hover-effekt for seksjoner og underseksjoner */
+.utvidbar-knapp:hover, .sub-utvidbar-knapp:hover {
+    background-color: #ddd;
+    color: #000000;
+}
+
+/* Innholdet i utvidbare seksjoner */
+.utvidbar-innhold {
+    display: none;
+    padding: 30px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.sub-utvidbar {
+    margin: 10px 0;
+}
+
+/* Knapp for underseksjoner */
+.sub-utvidbar-knapp {
+    width: 100%;
+    background-color: #f9df38;
+    color: black;
+    border: none;
+    padding: 10px;
+    font-size: 1em;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+/* Innholdet i utvidbare underseksjoner */
+.sub-utvidbar-innhold {
+    display: none;
+    padding: 10px 15px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+/* Innhold i underseksjoner */
+.sub-utvidbar-innhold h4 {
+    margin-top: 10px;
+    color: #000000;
+}
+
+/* Nested lister i underseksjoner */
+.sub-utvidbar-innhold ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.sub-utvidbar-innhold ul ul {
+    padding-left: 20px;
+    list-style: circle;
+}
+
+/* Lenker i underseksjoner */
+.sub-utvidbar-innhold a {
+    display: block;
+}
+
+/* === Footer === */
 footer {
     background-color: #004d80;
     padding: 20px;
@@ -281,130 +342,18 @@ footer button:active {
     transform: scale(0.98);
 }
 
-/* Justerer bilde størrelse etter skjermstørrelse til bruker*/
 .footer-bilde {
     width: 150px;
     max-width: 150px;
     margin: -150px 40px 0 auto;
     position: relative;
-
     float: right;
-    /* Sentere bildet */
 }
 
-
-.accordion-section {
-    margin-bottom: 20px;
-}
-
-.accordion-toggle {
-    background-color: #f9df38;
-    color: #000000;
-    font-size: 1.2em;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-    text-align: left;
-    transition: background-color 0.3s;
-}
-
-.accordion-toggle:hover {
-    background-color: #ddd;
-    color: #000000;
-}
-
-.accordion-content {
-    display: none;
-    padding: 30px;
-    background-color: #ffffff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.sub-accordion {
-    margin: 10px 0;
-}
-
-.sub-accordion-toggle {
-    width: 100%;
-    background-color: #b9b900;
-    color: white;
-    border: none;
-    padding: 10px;
-    font-size: 1em;
-    text-align: left;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.sub-accordion-toggle:hover {
-    background-color: #b9b900;
-}
-
-.sub-accordion-content {
-    display: none;
-    padding: 10px 15px;
-    background-color: #ffffff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-top: 5px;
-}
-
-.sub-accordion-content h4 {
-    margin-top: 10px;
-    color: #000000;
-}
-
-.sub-accordion-content ul {
-    margin: 10px 0;
-    padding-left: 20px;
-}
-
-.sub-accordion-content ul ul {
-    padding-left: 20px;
-    list-style: circle;
-}
-
-.sub-accordion-content a {
-    display: block;
-}
+/* === Responsive Styling === */
 
 /* Gjør at bidlet i spørsmål utdanning justerer seg dynamisk etter skjermstørrelse */
 .bilde-sporsmol-undanning {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-.Studenthistorier {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    margin: 20px auto;
-    max-width: 100%;
-    text-align: center;
-}
-
-.Studenthistorier h2 {
-    color: black;
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-.Studenthistorier p {
-    color: #333;
-    font-size: 1.2em;
-    margin-bottom: 15px;
-}
-
-.Studenthistorier ul {
-    list-style-type: none;
-}
-
-.Studenthistorier img {
     max-width: 100%;
     height: auto;
     display: block;

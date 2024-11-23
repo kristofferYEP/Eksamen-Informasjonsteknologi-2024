@@ -57,9 +57,9 @@
         </section>
 
         <!-- Opptakskrav og poeng -->
-        <section class="accordion-section">
-            <button class="accordion-toggle" onclick="toggleAccordion(this)">Opptakskrav og poeng</button>
-            <section class="accordion-content">
+        <section class="utvidbar-seksjon">
+            <button class="utvidbar-knapp" onclick="byttUtvidbarUtseende(this)">Opptakskrav og poeng</button>
+            <section class="utvidbar-innhold">
                 <p>For å bli tatt opp til studiet, må du oppfylle følgende krav:</p>
                 <ul>
                     <li><strong>Generell studiekompetanse</strong> eller tilsvarende realkompetanse.</li>
@@ -71,9 +71,9 @@
         </section>
 
         <!-- Hva lærer du? -->
-        <section class="accordion-section">
-            <button class="accordion-toggle" onclick="toggleAccordion(this)">Hva lærer du?</button>
-            <section class="accordion-content">
+        <section class="utvidbar-seksjon">
+            <button class="utvidbar-knapp" onclick="byttUtvidbarUtseende(this)">Hva lærer du?</button>
+            <section class="utvidbar-innhold">
                 <p>Gjennom dette studiet vil du få:</p>
                 <ul>
                     <li>Grunnleggende ferdigheter i programmering og datateknologi.</li>
@@ -85,14 +85,14 @@
         </section>
 
         <!-- Studiets oppbygging med sub klasser for vært år -->
-        <section class="accordion-section">
-            <button class="accordion-toggle" onclick="toggleAccordion(this)">Studiets oppbygging</button>
-            <section class="accordion-content">
+        <section class="utvidbar-seksjon">
+            <button class="utvidbar-knapp" onclick="byttUtvidbarUtseende(this)">Studiets oppbygging</button>
+            <section class="utvidbar-innhold">
 
                 <!-- studieår 1 -->
-                <section class="sub-accordion">
-                    <button class="accordion-toggle" onclick="toggleAccordion(this)">1. studieår</button>
-                    <section class="sub-accordion-content">
+                <section class="sub-utvidbar">
+                    <button class="sub-utvidbar-knapp" onclick="byttUtvidbarUtseende(this)">1. studieår</button>
+                    <section class="sub-utvidbar-innhold">
                         <h4>1. semester</h4>
                         <ul>
                             <li>Diskret matematikk - DAPE1300 - 10 stp.</li>
@@ -110,9 +110,9 @@
                 </section>
 
                 <!-- Studie år 2 -->
-                <section class="sub-accordion">
-                    <button class="accordion-toggle" onclick="toggleAccordion(this)">2. studieår</button>
-                    <section class="sub-accordion-content">
+                <section class="sub-utvidbar">
+                    <button class="sub-utvidbar-knapp" onclick="byttUtvidbarUtseende(this)">2. studieår</button>
+                    <section class="sub-utvidbar-innhold">
                         <h4>3. semester</h4>
                         <ul>
                             <li>Matematikk 2000 med statistikk - DAPE2000 - 10 stp.</li>
@@ -132,9 +132,9 @@
                 </section>
 
                 <!-- Studie år 3 -->
-                <section class="sub-accordion">
-                    <button class="accordion-toggle" onclick="toggleAccordion(this)">3. studieår</button>
-                    <section class="sub-accordion-content">
+                <section class="sub-utvidbar">
+                    <button class="sub-utvidbar-knapp" onclick="byttUtvidbarUtseende(this)">3. studieår</button>
+                    <section class="sub-utvidbar-innhold">
                         <h4>5. semester</h4>
                         <ul>
                             <li>Matematikk 3000 - DAVE3700 - 10 stp.</li>
@@ -156,14 +156,14 @@
         </section>
 
         <!-- Studie sted og sub klasser/info bokser -->
-        <section class="accordion-section">
-            <button class="accordion-toggle" onclick="toggleAccordion(this)">Studiested</button>
-            <section class="accordion-content">
+        <section class="utvidbar-seksjon">
+            <button class="utvidbar-knapp" onclick="byttUtvidbarUtseende(this)">Studiested</button>
+            <section class="utvidbar-innhold">
 
                 <!-- Adresse -->
-                <section class="sub-accordion">
-                    <button class="accordion-toggle" onclick="toggleAccordion(this)">Adresse</button>
-                    <section class="sub-accordion-content">
+                <section class="sub-utvidbar">
+                    <button class="sub-utvidbar-knapp" onclick="byttUtvidbarUtseende(this)">Adresse</button>
+                    <section class="sub-utvidbar-innhold">
                         <p>OsloMet, Pilestredet 35, 0166 Oslo</p>
                         <a href="https://www.google.com/maps?q=OsloMet+Pilestredet+35"> Se i Google Maps</a>
                         <a
@@ -173,9 +173,9 @@
                 </section>
 
                 <!-- Hovedresepsjon -->
-                <section class="sub-accordion">
-                    <button class="accordion-toggle" onclick="toggleAccordion(this)">Hovedresepsjon</button>
-                    <section class="sub-accordion-content">
+                <section class="sub-utvidbar">
+                    <button class="sub-utvidbar-knapp" onclick="byttUtvidbarUtseende(this)">Hovedresepsjon</button>
+                    <section class="sub-utvidbar-innhold">
                         <p>Telefon: 67 23 60 00</p>
                         <p>Åpningstider: Mandag–Fredag, 08:00–16:00</p>
                         <a href="https://www.google.com/maps?q=OsloMet+Pilestredet+46" target="_blank"
@@ -184,9 +184,9 @@
                 </section>
 
                 <!-- Studietorget -->
-                <section class="sub-accordion">
-                    <button class="accordion-toggle" onclick="toggleAccordion(this)">Studenttorget</button>
-                    <section class="sub-accordion-content">
+                <section class="sub-utvidbar">
+                    <button class="sub-utvidbar-knapp" onclick="byttUtvidbarUtseende(this)">Studenttorget</button>
+                    <section class="sub-utvidbar-innhold">
                         <p>Telefon: 67 23 77 78</p>
                         <p>Tilgjengelig for studenter: Mandag–Fredag, 09:00–15:00</p>
                         <a href="https://www.google.com/maps?q=OsloMet+Pilestredet+52" target="_blank"
@@ -197,9 +197,9 @@
         </section>
 
         <!-- Spørsmål om utdanningen? -->
-        <section class="accordion-section">
-            <button class="accordion-toggle" onclick="toggleAccordion(this)">Spørsmål om utdanningen?</button>
-            <section class="accordion-content">
+        <section class="utvidbar-seksjon">
+            <button class="utvidbar-knapp" onclick="byttUtvidbarUtseende(this)">Spørsmål om utdanningen?</button>
+            <section class="utvidbar-innhold">
                 <p>Har du spørsmål om utdanningen, kontakt oss gjennom vårt <a href="contact.html">kontaktskjema</a>.</p>
                 <h3>Faglig leder</h3>
                 <p><strong>Kristoffer Herland Hellton</strong></p>
@@ -208,10 +208,10 @@
         </section>      
 
         <!-- Du er kanskje også interessert i disse? -->
-        <section class="accordion-section">
-            <button class="accordion-toggle" onclick="toggleAccordion(this)">Du er kanskje også interessert i
+        <section class="utvidbar-seksjon">
+            <button class="utvidbar-knapp" onclick="byttUtvidbarUtseende(this)">Du er kanskje også interessert i
                 disse?</button>
-            <section class="accordion-content">
+            <section class="utvidbar-innhold">
                 <ul>
                     <li><a href="https://www.oslomet.no/studier/tkd/anvendt-datateknologi">Anvendt datateknologi</a> –
                         Bachelorprogram, 3 år, Pilestredet i Oslo, Heltid</li>
@@ -266,7 +266,7 @@
 <!-- Javascript kode for knapper og subknapper -->
 <script>
     // Bytter display style mellom åpen og lukket  
-    function toggleAccordion(button) {
+    function byttUtvidbarUtseende(button) {
         const content = button.nextElementSibling;
         button.classList.toggle('active');
         content.style.display = content.style.display === 'block' ? 'none' : 'block';
