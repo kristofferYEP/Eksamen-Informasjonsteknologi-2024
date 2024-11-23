@@ -14,14 +14,14 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-color: white;
     color: #333;
 }
 
 /* Header */
 header {
-    background: #002e5d;
-    color: #fff;
+    background: #004d80;
+    color: rgb(255, 255, 255);
     padding: 2.5rem 0;
     text-align: center;
 }
@@ -32,49 +32,58 @@ header h1 {
 }
 
 /* Navigasjonsmeny */
-.navbar {
-    display: flex;
-    justify-content: center;
-    background-color: #001d3a;
+nav {
+    background-color: #fde12b;
+    padding: 15px 0;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    border: solid black 1px;
+    border-radius: 5px;
+}
+
+nav ul {
+    display: inline-block;
     list-style: none;
-    margin: 0;
     padding: 0;
-}
-
-.navbar li {
     margin: 0;
 }
 
-.navbar a {
-    text-decoration: none;
-    color: white;
-    padding: 1rem 1.5rem;
-    display: block;
+nav ul li {
+    display: inline;
     font-weight: bold;
+    margin: 0 10px;
 }
 
-.navbar a:hover,
-.navbar a.active {
-    background-color: #003b6f;
-    border-radius: 4px;
+nav ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #b6a225;
 }
 
 
 /* Hovedinnhold */
 main {
     padding: 2rem;
+    background-color: #ffffff;
 }
 
 section {
     margin-bottom: 2rem;
-    background: #fff;
+    background: #fde12b;
     padding: 1rem;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 section h2 {
-    color: #0078d7;
+    color: black;
 }
 
 /* Testresultater seksjon */
@@ -127,7 +136,7 @@ img {
 
 /* Footer */
 footer {
-  background-color: #002e5d; 
+  background-color: #004d80; 
   color: white;
   padding: 20px;
 }
@@ -153,8 +162,8 @@ footer {
 /* Abonner-knappen */
 .subscribe-button {
   display: inline-block;
-  background-color: #fbb034; /* Oransje */
-  color: white;
+  background-color: #ffdc00;
+  color: rgb(0, 0, 0);
   text-decoration: none;
   padding: 10px 20px;
   font-size: 1em;
@@ -231,48 +240,6 @@ footer a {
                     <p class="caption">WAVE-test: ...</p>
                 </div>
             </div>
-        </section>
-        <section>
-            <h2>Hva sier testene?</h2>
-            <p>Selv om nettstedet allerede oppfyller mange tilgjengelighetsstandarder, er det noen forbedringer som kan implementeres i fremtiden:</p>
-            <ul>
-                <li>Støtte for flere språk ved hjelp av lang-attributtet i HTML.</li>
-                <li>Ytterligere tester med ulike skjermlesere som NVDA og VoiceOver.</li>
-                <li>Kontinuerlig brukertesting for å få tilbakemeldinger fra ekte brukere.</li>
-            </ul>
-        </section>
-        <section>
-        
-            <h2>Testresultater Lighthouse</h2>
-            <p>Vi testet tilgjengeligheten til dette nettstedet ved hjelp av Lighthouse og WAVE. Vi valgte disse to nettsidene fordi, ...</p>
-
-            <div class="test-results-grid">
-                <div>
-                    <img src="lighthouse-results1.png" alt="Lighthouse-test resultat 1">
-                    <p class="caption">Lighthouse-test: ...</p>
-                </div>
-                <div>
-                    <img src="lighthouse-results2.png" alt="Lighthouse-test resultat 2">
-                    <p class="caption">Lighthouse-test: ...</p>
-                </div>
-                <div>
-                    <img src="lighthouse-results3.png" alt="Lighthouse-test resultat 3">
-                    <p class="caption">WAVE-test: ...</p>
-                </div>
-                <div>
-                    <img src="lighthouse-results4.png" alt="Lighthouse-test resultat 4">
-                    <p class="caption">WAVE-test: ...</p>
-                </div>
-            </div>
-        </section>
-        <section>
-            <h2>Hva sier testene?</h2>
-            <p>Selv om nettstedet allerede oppfyller mange tilgjengelighetsstandarder, er det noen forbedringer som kan implementeres i fremtiden:</p>
-            <ul>
-                <li>Støtte for flere språk ved hjelp av lang-attributtet i HTML.</li>
-                <li>Ytterligere tester med ulike skjermlesere som NVDA og VoiceOver.</li>
-                <li>Kontinuerlig brukertesting for å få tilbakemeldinger fra ekte brukere.</li>
-            </ul>
         </section>
 
     </main>
