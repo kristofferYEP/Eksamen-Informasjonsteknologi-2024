@@ -7,10 +7,10 @@
 }
 
 body {
-    background-color: white;
+    background-color: #f9df38;
     /* Darker background */
-    color: white;
-    /* Light text for contrast */
+    color: #000000;
+    /* Black text for contrast */
     line-height: 1.6;
 }
 
@@ -21,12 +21,9 @@ body {
 }
 
 header {
-    background-color: #2e2e2e;
-    /* Darker header background */
-    color: #fff;
+    color: #353535;
     text-align: center;
     padding: 40px 20px;
-    margin-bottom: 30px;
 }
 
 header h1 {
@@ -39,48 +36,51 @@ header p {
 }
 
 nav {
-    background-color: #333333;
-    /* Darker navbar background */
-    border-bottom: 1px solid #444;
+    background-color: #216d9f;
     padding: 15px 0;
-    margin-bottom: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px;
+    border: solid black 1px;
 }
 
 nav ul {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+    display: inline-block;
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 nav ul li {
+    display: inline;
     font-weight: bold;
+    margin: 0 10px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #e0e0e0;
-    /* Light text color */
+    color: #000000;
     padding: 10px 15px;
     transition: background-color 0.3s;
     border-radius: 5px;
 }
 
 nav ul li a:hover {
-    background-color: #444;
+    background-color: #aaaaaa;
     /* Slightly darker background on hover */
 }
 
 main h2 {
-    color: #d0d0d0;
+    color: #353535;
     /* Light grey for headers */
     margin-bottom: 15px;
 }
 
 section {
-    background-color: #2a2a2a;
-    /* Darker section background */
-    padding: 20px;
+    background-color: #ffffff;
+    border: solid black 1px;
+    padding: 25px;
     margin-bottom: 20px;
     border-radius: 8px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
@@ -128,7 +128,6 @@ section {
 
 footer {
     background-color: #1c1c1c;
-    /* Dark footer background */
     color: #e0e0e0;
     text-align: center;
     padding: 20px 0;
@@ -142,8 +141,6 @@ footer {
     padding: 20px;
     text-align: left;
     color: #ddd;
-    border-top: 3px solid #003366;
-    /* Legger til en toppgrense for effekt */
 }
 
 footer h3 {
