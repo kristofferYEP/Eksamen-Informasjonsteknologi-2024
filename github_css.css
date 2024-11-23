@@ -127,17 +127,7 @@ section {
 }
 
 footer {
-    background-color: #1c1c1c;
-    color: #e0e0e0;
-    text-align: center;
-    padding: 20px 0;
-    font-size: 0.9em;
-    margin-top: 30px;
-}
-
-footer {
     background-color: #004d80;
-    /* Litt mørkere for kontrast */
     padding: 20px;
     text-align: left;
     color: #ddd;
@@ -147,13 +137,11 @@ footer h3 {
     color: white;
     font-size: 1.2em;
     margin-bottom: 10px;
-    /* Gir litt avstand fra underliggende elementer */
     display: flex;
     align-items: center;
 }
 
-footer h4,
-footer p {
+footer h4, footer p {
     color: #f0f0f0;
     font-size: 1em;
     margin: 5px 0;
@@ -163,41 +151,32 @@ footer p {
     padding-left: 2%;
 }
 
-/* Styling for button */
 footer button {
-    background-color: #ffaa00;
-    /* Farge som står ut og gir kontrast */
-    color: #004d80;
+    background-color: #ffdc00;
+    color: #000000;
     border: none;
     border-radius: 5px;
     padding: 10px 15px;
     cursor: pointer;
     font-size: 1em;
     margin-left: 15px;
-    /* Liten avstand fra teksten */
     transition: background-color 0.3s, transform 0.3s;
-    /* Smooth hover-effekter */
 }
 
 footer button:hover {
-    background-color: #ffcc33;
-    /* Lysere variant ved hover */
+    background-color: #e69500;
     transform: scale(1.05);
-    /* Liten zoom-effekt ved hover */
 }
 
 footer button:active {
-    background-color: #e69500;
-    /* Mørkere farge ved klikk */
+    background-color: #ffdc00;
     transform: scale(0.98);
-    /* Liten nedtrykt effekt ved klikk */
 }
 
 .footer-bilde {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    /* Sentere bildet */
+    width: 150px;
+    max-width: 150px;
+    margin: -150px 40px 0 auto;
+    position: relative;
+    float: right;
 }

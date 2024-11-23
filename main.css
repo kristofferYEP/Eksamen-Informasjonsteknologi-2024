@@ -6,6 +6,8 @@
     font-family: Arial, sans-serif;
 }
 
+/* ---===III Hoved hjemmeside styling (index.html) start III===---*/ 
+
 body {
     background-color: #f3f3f3;
     color: #333;
@@ -298,7 +300,6 @@ footer {
     padding: 20px;
     text-align: left;
     color: #ddd;
-    border-top: 3px solid #003366;
 }
 
 footer h3 {
@@ -357,3 +358,6 @@ footer button:active {
     height: auto;
     display: block;
 }
+
+/* ---===III Hoved hjemmeside styling (index.html) slutt III===---*/ 
+
