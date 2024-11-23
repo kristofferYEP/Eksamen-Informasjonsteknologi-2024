@@ -6,7 +6,7 @@
     font-family: Arial, sans-serif;
 }
 
-body {
+.github-body {
     background-color: #f9df38;
     /* Darker background */
     color: #000000;
@@ -14,28 +14,28 @@ body {
     line-height: 1.6;
 }
 
-.container {
+.github-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
-header {
+.github-header {
     color: #353535;
     text-align: center;
     padding: 40px 20px;
 }
 
-header h1 {
+.github-header h1 {
     font-size: 2.5em;
     margin-bottom: 10px;
 }
 
-header p {
+.github-header p {
     font-size: 1.2em;
 }
 
-nav {
+.github-nav {
     background-color: #216d9f;
     padding: 15px 0;
     max-width: 1200px;
@@ -45,20 +45,20 @@ nav {
     border: solid black 1px;
 }
 
-nav ul {
+.github-nav ul {
     display: inline-block;
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-nav ul li {
+.github-nav ul li {
     display: inline;
     font-weight: bold;
     margin: 0 10px;
 }
 
-nav ul li a {
+.github-nav ul li a {
     text-decoration: none;
     color: #000000;
     padding: 10px 15px;
@@ -66,18 +66,18 @@ nav ul li a {
     border-radius: 5px;
 }
 
-nav ul li a:hover {
+.github-nav ul li a:hover {
     background-color: #aaaaaa;
     /* Slightly darker background on hover */
 }
 
-main h2 {
+.github-main h2 {
     color: #353535;
     /* Light grey for headers */
     margin-bottom: 15px;
 }
 
-section {
+.github-section {
     background-color: #ffffff;
     border: solid black 1px;
     padding: 25px;
