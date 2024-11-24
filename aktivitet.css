@@ -2,8 +2,10 @@
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: white; /* Lys bakgrunn */
-    color: black; /* Svart tekst for kontrast */
+    background-color: white;
+    /* Lys bakgrunn */
+    color: black;
+    /* Svart tekst for kontrast */
 }
 
 /* Generell CSS for header-seksjonen */
@@ -25,6 +27,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    /*Source https://www.w3schools.com/cssref/css3_pr_transform.php*/
     text-align: center;
     text-shadow: 2px 2px 4px #000000;
 }
@@ -45,12 +48,15 @@
 .activity-body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-color: white; /* Lys bakgrunn */
-    color: black; /* Svart tekst */
+    background-color: white;
+    /* Lys bakgrunn */
+    color: black;
+    /* Svart tekst */
 }
 
 .activity-head {
-    background-color: #0080ff; /* Lys blå for bedre kontrast */
+    background-color: #0080ff;
+    /* Lys blå for bedre kontrast */
     color: white;
     padding: 20px;
     text-align: center;
@@ -62,7 +68,7 @@
 }
 
 .activity-nav {
-    background-color: rgb(0, 102, 102); 
+    background-color: rgb(0, 102, 102);
     padding: 10px;
 }
 
@@ -99,7 +105,8 @@
 
 .activity-aside {
     flex: 1;
-    background-color: #f7f7f7; /* Lys grå seksjonsbakgrunn */
+    background-color: #f7f7f7;
+    /* Lys grå seksjonsbakgrunn */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -107,7 +114,8 @@
 
 .activity-section {
     flex: 2;
-    background-color: #f7f7f7; /* Lys grå seksjonsbakgrunn */
+    background-color: #f7f7f7;
+    /* Lys grå seksjonsbakgrunn */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -153,8 +161,8 @@
 .activity-button {
     display: block;
     padding: 10px 20px;
-    background-color: #0056b3; 
-    color: white; 
+    background-color: #0056b3;
+    color: white;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
