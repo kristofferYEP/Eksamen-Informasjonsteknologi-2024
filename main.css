@@ -926,9 +926,47 @@ img {
 }
 
 /* Responsiv justering for små skjermer */
+/* Responsiv justering for små skjermer */
 @media (max-width: 768px) {
     .test-results-grid {
         grid-template-columns: 1fr;
+    }
+
+    .accessibility-nav ul {
+        display: block;
+        text-align: left;
+        padding-left: 0;
+        margin-top: 10px;
+    }
+
+    .accessibility-nav ul li {
+        display: block;
+        margin: 12px 0;
+    }
+
+    .accessibility-nav ul li a {
+        padding: 12px 20px;
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+
+    .accessibility-header h1 {
+        font-size: 36px;
+        margin: 0;
+    }
+
+    .accessibility-main {
+        padding: 2rem;
+    }
+
+    .accessibility-section {
+        margin-bottom: 2rem;
+        padding: 1.5rem;
+    }
+
+    .test-results-grid div {
+        padding: 15px;
     }
 }
 
@@ -936,7 +974,51 @@ img {
     .footer-content {
         flex-direction: column;
         text-align: center;
+        padding: 10px;
     }
+
+    .accessibility-header h1 {
+        font-size: 30px;
+    }
+
+    .accessibility-nav {
+        padding: 15px 0;
+    }
+
+    .accessibility-nav ul {
+        text-align: left;
+        padding-left: 0;
+        margin-top: 0;
+    }
+
+    .accessibility-nav ul li {
+        margin: 10px 0;
+    }
+
+    .accessibility-nav ul li a {
+        padding: 10px 15px;
+        width: auto;
+    }
+
+    .accessibility-main {
+        padding: 1.5rem;
+    }
+
+    .accessibility-section {
+        padding: 1rem;
+    }
+
+    .test-results-grid div {
+        padding: 10px;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 1rem 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
 img {
@@ -946,7 +1028,6 @@ img {
     border: 1px solid #ddd;
     border-radius: 5px;
 }
-
 
 
 /* ---===III Accessibility Styling Slutt III===---*/
