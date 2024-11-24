@@ -6,7 +6,7 @@
     font-family: Arial, sans-serif;
 }
 
-/* ---===III Hoved hjemmeside styling (index.html) start III===---*/ 
+/* ---===III Hoved hjemmeside styling (index.html) start III===---*/
 
 .index-body {
     background-color: #f3f3f3;
@@ -208,12 +208,12 @@
 
 /* Container for utvidbare seksjoner */
 .utvidbar-seksjon {
-    background-color: #ffffff; 
-    padding: 10px; 
-    border-radius: 8px; 
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
-    margin: 20px auto; 
-    width: 100%; 
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 100%;
 }
 
 /* Knapp for hovedseksjon */
@@ -231,7 +231,8 @@
 }
 
 /* Hover-effekt for seksjoner og underseksjoner */
-.utvidbar-knapp:hover, .sub-utvidbar-knapp:hover {
+.utvidbar-knapp:hover,
+.sub-utvidbar-knapp:hover {
     background-color: #ddd;
     color: #000000;
 }
@@ -311,7 +312,8 @@ footer h3 {
     align-items: center;
 }
 
-footer h4, footer p {
+footer h4,
+footer p {
     color: #f0f0f0;
     font-size: 1em;
     margin: 5px 0;
@@ -349,7 +351,8 @@ footer button:active {
     margin: -150px 40px 0 auto;
     position: relative;
     float: right;
-    border: none; /* Styling bug, putter border rundt accessibility oslomet logo, quick fix med border = none*/
+    border: none;
+    /* Styling bug, putter border rundt accessibility oslomet logo, quick fix med border = none*/
 }
 
 /* === Responsive Styling === */
@@ -361,19 +364,25 @@ footer button:active {
     display: block;
 }
 
-/* ---===III Hoved hjemmeside styling (index.html) slutt III===---*/ 
+/* ---===III Hoved hjemmeside styling (index.html) slutt III===---*/
 
-/* ---===III Activity Styling Slutt III===---*/ 
+/* ---===III Activity Styling Start III===---*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
 
 .activity-body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: white; /* Lys bakgrunn */
-    color: black; /* Svart tekst for kontrast */
+    line-height: 1.6;
+    background-color: white;
+    color: black;
+    overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
 }
 
-/* Generell CSS for header-seksjonen */
 .activity-header {
     min-height: 100vh;
     width: 100%;
@@ -384,7 +393,6 @@ footer button:active {
     margin: 0;
 }
 
-/* Stilen for overskriften på bildet */
 .activity-text-overskrift {
     width: 90%;
     color: lightblue;
@@ -402,22 +410,8 @@ footer button:active {
     margin: 0;
 }
 
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.activity-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: white; /* Lys bakgrunn */
-    color: black; /* Svart tekst */
-}
-
 .activity-head {
-    background-color: #0080ff; /* Lys blå for bedre kontrast */
+    background-color: #0080ff;
     color: white;
     padding: 20px;
     text-align: center;
@@ -429,8 +423,9 @@ footer button:active {
 }
 
 .activity-nav {
-    background-color: rgb(0, 102, 102); 
+    background-color: rgb(0, 102, 102);
     padding: 10px;
+    width: 100%;
 }
 
 .activity-nav ul {
@@ -443,9 +438,10 @@ footer button:active {
 .activity-nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 10px;
+    padding: 12px 20px;
     border-radius: 5px;
     transition: background-color 0.3s;
+    display: inline-block;
 }
 
 .activity-nav ul li a:hover {
@@ -466,7 +462,7 @@ footer button:active {
 
 .activity-aside {
     flex: 1;
-    background-color: #f7f7f7; /* Lys grå seksjonsbakgrunn */
+    background-color: #f7f7f7;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -474,7 +470,7 @@ footer button:active {
 
 .activity-section {
     flex: 2;
-    background-color: #f7f7f7; /* Lys grå seksjonsbakgrunn */
+    background-color: #f7f7f7;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -505,6 +501,7 @@ footer button:active {
     object-fit: contain;
     border-radius: 5px;
     margin-bottom: 15px;
+    max-width: 100%;
 }
 
 .activity-card h2 {
@@ -520,13 +517,14 @@ footer button:active {
 .activity-button {
     display: block;
     padding: 10px 20px;
-    background-color: #0056b3; 
-    color: white; 
+    background-color: #0056b3;
+    color: white;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
     transition: background-color 0.3s;
     margin-bottom: 10px;
+    -webkit-appearance: none;
 }
 
 .activity-button:hover {
@@ -534,21 +532,136 @@ footer button:active {
 }
 
 @media (max-width: 768px) {
+    .activity-text-overskrift h1 {
+        font-size: 3em;
+    }
+
     .activity-content-container {
         flex-direction: column;
+        padding: 10px;
+    }
+
+    .activity-container {
+        padding: 10px;
+    }
+
+    .activity-card-container {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
+    .activity-text-overskrift h1 {
+        font-size: 1.8em;
+        letter-spacing: 0.05em;
+    }
+
+    .activity-nav {
+        padding: 5px;
+    }
+
     .activity-nav ul {
         flex-direction: column;
         align-items: center;
+        gap: 8px;
+    }
+
+    .activity-nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .activity-nav ul li a {
+        display: block;
+        padding: 10px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .activity-head .activity-container h1 {
+        font-size: 1.5em;
+    }
+
+    .activity-container {
+        padding: 10px;
+    }
+
+    .activity-card {
+        margin: 5px 0;
+        padding: 10px;
+    }
+
+    .activity-card-container {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .activity-card h2 {
+        font-size: 1.2em;
+    }
+
+    .activity-card p {
+        font-size: 0.9em;
+    }
+
+    .activity-button {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+
+    .activity-aside,
+    .activity-section {
+        padding: 15px;
     }
 }
 
-/* ---===III Activity Styling Slutt III===---*/ 
+@media screen and (max-width: 375px) {
+    .activity-text-overskrift h1 {
+        font-size: 1.5em;
+    }
 
-/* ---===III Github Styling Start III===---*/ 
+    .activity-card {
+        padding: 8px;
+    }
+
+    .activity-container {
+        padding: 8px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .activity-text-overskrift h1 {
+        font-size: 4em;
+    }
+
+    .activity-card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .activity-container {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 900px) and (orientation: landscape) {
+    .activity-header {
+        min-height: 120vh;
+    }
+
+    .activity-text-overskrift h1 {
+        font-size: 2.5em;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    -webkit-user-drag: none;
+}
+
+/* ---===III Activity Styling Slutt III===---*/
+
+/* ---===III Github Styling Start III===---*/
 
 .github-body {
     background-color: #f9df38;
@@ -670,9 +783,9 @@ footer button:active {
     }
 }
 
-/* ---===III Github Styling Slutt III===---*/ 
+/* ---===III Github Styling Slutt III===---*/
 
-/* ---===III Accessibility Styling Start III===---*/ 
+/* ---===III Accessibility Styling Start III===---*/
 
 .accessibility-body {
     font-family: Arial, sans-serif;
@@ -754,8 +867,10 @@ footer button:active {
 /* Testresultater seksjon */
 .test-results-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* To kolonner */
-    gap: 20px; /* Mellomrom mellom elementene */
+    grid-template-columns: repeat(2, 1fr);
+    /* To kolonner */
+    gap: 20px;
+    /* Mellomrom mellom elementene */
     margin-top: 20px;
 }
 
@@ -784,15 +899,17 @@ footer button:active {
 /* Responsiv justering for små skjermer */
 @media (max-width: 768px) {
     .test-results-grid {
-        grid-template-columns: 1fr; /* En kolonne for mindre skjermer */
+        grid-template-columns: 1fr;
+        /* En kolonne for mindre skjermer */
     }
 }
 
 @media (max-width: 600px) {
-  .footer-content {
-    flex-direction: column; /* Sett innholdet vertikalt på små skjermer */
-    text-align: center;
-  }
+    .footer-content {
+        flex-direction: column;
+        /* Sett innholdet vertikalt på små skjermer */
+        text-align: center;
+    }
 }
 
 img {
@@ -803,4 +920,4 @@ img {
     border-radius: 5px;
 }
 
-/* ---===III Accessibility Styling Slutt III===---*/ 
+/* ---===III Accessibility Styling Slutt III===---*/
