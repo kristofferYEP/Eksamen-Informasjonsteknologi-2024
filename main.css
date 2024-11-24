@@ -829,8 +829,8 @@ img {
 
 /* Header */
 .accessibility-header {
-    background: #004d80;
-    color: rgb(255, 255, 255);
+    background: #d7d715;
+    color: #000000;
     padding: 2.5rem 0;
     text-align: center;
 }
@@ -897,8 +897,10 @@ img {
 /* Testresultater seksjon */
 .test-results-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* To kolonner */
-    gap: 20px; /* Mellomrom mellom elementene */
+    grid-template-columns: repeat(2, 1fr);
+    /* To kolonner */
+    gap: 20px;
+    /* Mellomrom mellom elementene */
     margin-top: 20px;
 }
 
@@ -927,15 +929,17 @@ img {
 /* Responsiv justering for små skjermer */
 @media (max-width: 768px) {
     .test-results-grid {
-        grid-template-columns: 1fr; /* En kolonne for mindre skjermer */
+        grid-template-columns: 1fr;
+        /* En kolonne for mindre skjermer */
     }
 }
 
 @media (max-width: 600px) {
-  .footer-content {
-    flex-direction: column; /* Sett innholdet vertikalt på små skjermer */
-    text-align: center;
-  }
+    .footer-content {
+        flex-direction: column;
+        /* Sett innholdet vertikalt på små skjermer */
+        text-align: center;
+    }
 }
 
 img {

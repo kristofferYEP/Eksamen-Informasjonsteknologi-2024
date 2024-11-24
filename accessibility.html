@@ -2,77 +2,123 @@
 <html lang="no">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Accessibility</title>
-<link rel="stylesheet" href="main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tilgjengelighet</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body class="accessibility-body">
     <header class="accessibility-header">
         <h1>Tilgjengelighet</h1>
-        <nav class="accessibility-nav">
+        <nav class="accessibility-nav" role="navigation" aria-label="Hovednavigasjon">
             <ul>
                 <li><a href="index.html">Hjem</a></li>
                 <li><a href="activity.html">Aktiviteter</a></li>
-                <li><a href="accessibility.html">Tilgjengelighet</a></li>
+                <li><a href="accessibility.html" aria-current="page">Tilgjengelighet</a></li>
                 <li><a href="github.html">GitHub</a></li>
             </ul>
         </nav>
-</header>
-<main class="accessibility-main">
-    <section class="accessibility-section">
-        <h2>Hva er tilgjengelighet?</h2>
-        <p>Tilgjengelighet på nettet handler om å sikre at alle brukere, inkludert personer med funksjonsnedsettelser, kan navigere og bruke nettstedet uten problemer.</p>
-        <p>Dette inkluderer brukere som benytter skjermlesere, navigerer kun med tastatur eller har utfordringer med fargesyn.</p>
-    </section>
-<section class="accessibility-section">
-        <h2>Beste praksis for tilgjengelighet</h2>
-        <p>Her er noen grunnleggende prinsipper for å oppnå universelt design:</p>
-<ul style="list-style-type: none;">
-    <li>Bruk av semantisk HTML for bedre skjermleserkompatibilitet.</li>
-    <li>Test nettstedets kontrastnivåer med verktøy som Contrast Checker.</li>
-    <li>Tilby tastaturnavigasjon for alle interaktive elementer.</li>
-</ul>
-</section>
-<section class="accessibility-section">
-        <h2>Testresultater WAVE</h2>
-            <p>Vi valgte WAVE som verktøy for å teste tilgjengeligheten fordi det er enkelt å bruke og gir en omfattende evaluering av nettsider, inkludert identifisering av feil, advarsler og strukturelle elementer. Programmet gir også tydelig veiledning for hvordan tilgjengeligheten kan forbedres, noe som gjør det ideelt for å sikre universell utforming.</p>
-
-        <section class="test-results-grid">
-        <section>
-            <img src="bilder/WAVE-test1.jpeg" alt="WAVE-test resultat 1">
-            <p class="caption">WAVE-test 1</p>
+    </header>
+    <main class="accessibility-main">
+        <section class="accessibility-section">
+            <h2>Hva er tilgjengelighet?</h2>
+            <p>Tilgjengelighet på nettet handler om å sikre at alle brukere, inkludert personer med
+                funksjonsnedsettelser, kan navigere og bruke nettstedet uten problemer. Dette inkluderer brukere som
+                benytter skjermlesere, navigerer kun med tastatur eller har utfordringer med fargesyn.</p>
         </section>
-        <section>
-            <img src="bilder/WAVE-test2.jpeg" alt = "WAVE-test resultat 2">
-            <p class="caption">WAVE-test 2</p>
+        <section class="accessibility-section">
+            <h2>Beste praksis for tilgjengelighet</h2>
+            <p>Her er noen grunnleggende prinsipper for å oppnå universelt design:</p>
+            <ul>
+                <li>Bruk av semantisk HTML for bedre skjermleserkompatibilitet.</li>
+                <li>Test nettstedets kontrastnivåer med verktøy som Contrast Checker.</li>
+                <li>Tilby tastaturnavigasjon for alle interaktive elementer.</li>
+            </ul>
         </section>
-        <section>
-            <img src="bilder/WAVE-test3.1.png" alt="WAVE-test resultat 3">
-            <p class="caption">WAVE-test 3</p>
-        </section>
-        <section>
-            <img src="bilder/WAVE-test4.jpeg" alt="WAVE-test resultat 4">
-            <p class="caption">WAVE-test 4</p>
-        </section>
-        </section>
+        <section class="accessibility-section">
+            <h2>Testresultater WAVE</h2>
+            <p>Vi valgte WAVE som verktøy for å teste tilgjengeligheten fordi det er enkelt å bruke og gir en omfattende
+                evaluering av nettsider.</p>
+            <div class="test-results-grid">
+                <figure>
+                    <img src="bilder/WAVE-test1.jpeg" alt="WAVE-test resultat 1">
+                    <figcaption>WAVE-test 1</figcaption>
+                </figure>
+                <figure>
+                    <img src="bilder/WAVE-test2.jpeg" alt="WAVE-test resultat 2">
+                    <figcaption>WAVE-test 2</figcaption>
+                </figure>
+                <figure>
+                    <img src="bilder/WAVE-test3.1.png" alt="WAVE-test resultat 3">
+                    <figcaption>WAVE-test 3</figcaption>
+                </figure>
+                <figure>
+                    <img src="bilder/WAVE-test4.jpeg" alt="WAVE-test resultat 4">
+                    <figcaption>WAVE-test 4</figcaption>
+                </figure>
+            </div>
         </section>
         <section class="accessibility-section">
             <h2>Hva sier testene?</h2>
-            <p>Tilgjengelighet ble testet på fire forskjellige nettsider ved bruk av WAVE-verktøyet, som er et anerkjent hjelpemiddel for å evaluere webtilgjengelighet. WAVE analyserer nettsider og gir en oversikt over feil, advarsler og strukturelle elementer, i tillegg til å vurdere ARIA-funksjoner (Accessible Rich Internet Applications). Testresultatene viser at alle de fire nettsidene oppnådde gode resultater, uten kritiske feil eller kontrastproblemer, men det ble avdekket enkelte forbedringsmuligheter.</p>
-            <p></p>
+            <p>Testresultatene fra WAVE-verktøyet viser at nettsiden presterer svært godt når det gjelder
+                tilgjengelighet. Ingen kritiske feil eller kontrastproblemer ble funnet på noen av sidene, noe som
+                bekrefter at fargevalg og designvalg oppfyller WCAG 2.1 AA-kravene. Videre ble det identifisert et
+                moderat antall strukturelle elementer og ARIA-funksjoner, noe som indikerer at sidene er tilpasset
+                brukere som benytter skjermlesere eller annen assisterende teknologi.</p>
+            <p>Hver side hadde sine egne styrker:</p>
             <ul>
-                <li>WAVE test-1</li>
-                <p>Den første nettsiden, som fokuserer på "Matematisk Modellering og Datavitenskap," viste seg å være godt utformet med tanke på tilgjengelighet. Det ble ikke funnet noen feil eller kontrastproblemer, noe som indikerer at fargevalg og design er i tråd med universell utforming. WAVE rapporterte imidlertid 2 advarsler, som tyder på at det er mindre elementer som kan optimaliseres ytterligere. Det var totalt 31 strukturelle elementer, og 10 ARIA-funksjoner ble brukt for å forbedre tilgjengeligheten.</p>
-                <li>WAVE test-2</li>
-                <p>Den andre nettsiden, med temaet "Fotballens Hjem," presterte også svært godt i testen. Ingen feil, kontrastproblemer eller advarsler ble rapportert. Dette viser at nettsiden har en solid struktur og er brukervennlig for alle brukere, inkludert de som benytter hjelpemidler som skjermlesere. WAVE identifiserte 10 strukturelle elementer og 4 ARIA-funksjoner, noe som bidrar til en oversiktlig og intuitiv brukeropplevelse.</p>
-                <li>WAVE test-3</li>
-                <p>Den tredje nettsiden, som omhandler "Tilgjengelighet," fremhever selve viktigheten av universell utforming og er også godt tilpasset dette formålet. Ingen feil eller kontrastproblemer ble funnet, og det var ingen advarsler. Totalt 14 strukturelle elementer og 6 ARIA-funksjoner ble implementert, noe som sikrer god støtte for brukere med funksjonsnedsettelser.</p>
-                <li>WAVE test-4</li>
-                <p>Den fjerde nettsiden, som presenterer "GitHub Prosjekt Samarbeid," viste også svært gode resultater. Som med de andre sidene, var det ingen feil eller kontrastproblemer. Strukturen var solid med 13 identifiserte elementer og flere ARIA-funksjoner som forbedrer navigasjon og brukervennlighet. Dette reflekterer et nøye gjennomtenkt design som oppfyller kravene til tilgjengelighet.</p>
+                <li><strong>Test 1:</strong> Viste et godt utformet design med 31 strukturelle elementer og 10
+                    ARIA-funksjoner. Selv om det var to advarsler, gjaldt disse mindre optimaliseringer som ikke
+                    påvirker den generelle brukervennligheten.</li>
+                <li><strong>Test 2:</strong> Hadde ingen feil eller advarsler, noe som viser at denne siden er
+                    eksemplarisk for universell utforming. Den hadde en tydelig struktur med 10 elementer og 4
+                    ARIA-funksjoner.</li>
+                <li><strong>Test 3:</strong> Presterte også svært godt, uten feil eller advarsler, med totalt 14
+                    strukturelle elementer og 6 ARIA-funksjoner som forbedrer navigasjonen.</li>
+                <li><strong>Test 4:</strong> Hadde ingen feil og demonstrerte en sterk implementering av
+                    tilgjengelighetsprinsipper med 13 strukturelle elementer.</li>
             </ul>
-            </section>
+            <p>Generelt viser testene at nettsiden oppfyller kravene for tilgjengelighet, men de mindre advarslene
+                minner oss på at automatiske tester ikke alltid oppdager alle muligheter for forbedring.</p>
+
+            <p>En nøkkel til suksessen er vår gjennomtenkte bruk av semantisk HTML. For eksempel har vi brukt
+                header, nav, main og footer for å strukturere innholdet på en logisk måte som forbedrer navigasjonen
+                for
+                både mennesker og hjelpemidler. Vi har også sikret at alle interaktive elementer, som
+                knapper og lenker,
+                har klare og beskrivende etiketter for å gi kontekst til skjermleserbrukere.</p>
+
+            <p>En annen styrke ved vår kode er den konsistente bruken av tydelige skillelinjer mellom
+                innhold og design
+                ved å benytte CSS for styling. Vi unngikk bruk av inline-stiler for å sikre at innholdet
+                kan tilpasses
+                av brukerne selv, for eksempel ved å forstørre tekst eller justere farger.</p>
+
+            <p>Videre er tastaturnavigasjon en prioritet. Alle knapper og lenker er fullt tilgjengelige
+                med tastatur, og
+                vi har implementert visuelle fokusindikatorer som hjelper brukere å holde oversikt over
+                hvor de befinner
+                seg på siden. Dette er spesielt viktig for personer med motoriske utfordringer eller de
+                som foretrekker
+                tastaturnavigasjon fremfor en mus.</p>
+
+            <p>I tillegg brukte vi WAI-ARIA-roller (Accessible Rich Internet Applications) der det var
+                nødvendig for å
+                gi kontekst til dynamiske elementer, som menyer og knapper. Dette gir bedre støtte for
+                brukere av
+                skjermlesere og gjør opplevelsen mer intuitiv.</p>
+
+            <p>Generelt viser testene at nettsiden oppfyller kravene for tilgjengelighet og universell
+                utforming. Selv
+                om det var noen mindre advarsler, minner de oss på at automatiske tester ikke alltid
+                oppdager alle
+                muligheter for forbedring. Derfor kombinerer vi alltid automatiske tester med manuell
+                gjennomgang for å
+                sikre høyest mulig kvalitet. Nettsiden vår er et godt eksempel på hvordan riktig
+                struktur og bevisste
+                designvalg kan gjøre innhold tilgjengelig for alle.</p>
+        </section>
 
     </main>
     <footer id="footer-OsloMet">
@@ -84,7 +130,7 @@
         <p>Tlf.: 67 23 50 00 </p>
         <p>E-post: post@oslomet.no</p>
         <img src="bilder/oslomet-logo-gul.webp" class="footer-bilde" alt="OsloMet logo">
-
     </footer>
-        </body>
-        </html>
+</body>
+
+</html>
