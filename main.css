@@ -840,100 +840,40 @@ img {
     font-size: 40px;
 }
 
-.navbar {
-    display: flex;
-    justify-content: center;
-    background-color: #001d3a;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.navbar li {
-    margin: 0;
-}
-
-.navbar a {
-    text-decoration: none;
-    color: white;
-    padding: 1rem 1.5rem;
-    display: block;
-    font-weight: bold;
-}
-
-.navbar a:hover,
-.navbar a.active {
-    background-color: #003b6f;
-    border-radius: 4px;
-}
-
-/* Responsiv navigasjonsmeny */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column; /* Endre fra horisontal til vertikal layout */
-        align-items: center; /* Sentraliser elementene */
-    }
-    .navbar a {
-        padding: 0.8rem 1rem; /* Juster padding for mindre skjermer */
-        width: 100%; /* Fyll bredden */
-        text-align: center; /* Sentrer tekst */
-    }
-}
-
-@media (max-width: 480px) {
-    .navbar a {
-        padding: 0.6rem 0.8rem; /* Enda mindre padding for telefoner */
-    }
-}
-
-/* Navigasjonsmeny */
 .accessibility-nav {
-    background-color: #001d3a; /* Bakgrunnsfarge for hele navigasjonsseksjonen */
+    background-color: #ffffff;
+    padding: 15px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px;
+    border: solid black 1px;
 }
 
-.accessibility-nav .navbar {
-    display: flex;
-    justify-content: center;
+.accessibility-nav ul {
+    display: inline-block;
     list-style: none;
-    margin: 0;
     padding: 0;
-}
-
-.accessibility-nav .navbar li {
     margin: 0;
 }
 
-.accessibility-nav .navbar a {
-    text-decoration: none;
-    color: white;
-    padding: 1rem 1.5rem;
-    display: block;
+.accessibility-nav ul li {
+    display: inline;
     font-weight: bold;
+    margin: 0 10px;
 }
 
-.accessibility-nav .navbar a:hover,
-.accessibility-nav .navbar a.active {
-    background-color: #003b6f;
-    border-radius: 4px;
+.accessibility-nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+    border-radius: 5px;
 }
 
-/* Responsiv navigasjonsmeny */
-@media (max-width: 768px) {
-    .accessibility-nav .navbar {
-        flex-direction: column; /* Endre fra horisontal til vertikal layout */
-        align-items: center; /* Sentraliser elementene */
-    }
-    .accessibility-nav .navbar a {
-        padding: 0.8rem 1rem; /* Juster padding for mindre skjermer */
-        width: 100%; /* Fyll bredden */
-        text-align: center; /* Sentrer tekst */
-    }
-}
-
-@media (max-width: 480px) {
-    .accessibility-nav .navbar a {
-        padding: 0.6rem 0.8rem; /* Mindre padding for telefoner */
-    }
+.accessibility-nav ul li a:hover {
+    background-color: #aaaaaa;
+    /* Slightly darker background on hover */
 }
 
 /* Hovedinnhold */
