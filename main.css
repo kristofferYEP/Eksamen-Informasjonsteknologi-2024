@@ -696,9 +696,9 @@ img {
 
 .github-body {
     background-color: #f9df38;
-    /* Darker background */
+
     color: #000000;
-    /* Black text for contrast */
+
     line-height: 1.6;
 }
 
@@ -756,12 +756,11 @@ img {
 
 .github-nav ul li a:hover {
     background-color: #aaaaaa;
-    /* Slightly darker background on hover */
+    /* mørkere farge på hover*/
 }
 
 .github-main h2 {
     color: #353535;
-    /* Light grey for headers */
     margin-bottom: 15px;
 }
 
@@ -775,42 +774,33 @@ img {
     transition: box-shadow 0.3s ease;
 }
 
-/* Styles for image rows */
 .image-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* Two equal columns */
     gap: 20px;
     margin-top: 15px;
     align-items: start;
-    /* Align images at the top */
 }
 
 .image-row img {
     width: 100%;
     max-height: 400px;
-    /* Limit height for consistency */
     border-radius: 8px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
     object-fit: contain;
-    /* Ensure the images fit nicely */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .image-row img:hover {
     transform: scale(1.05);
-    /* Liten zoom-effekt */
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
-    /* Mer markant skygge */
     cursor: pointer;
-    /* Endrer markøren til en pekefinger */
 }
 
-/* Responsive adjustments for smaller screens */
+/* Responsive justeringer for mindre skjermer */
 @media (max-width: 768px) {
     .image-row {
         grid-template-columns: 1fr;
-        /* Stack images vertically */
     }
 }
 
@@ -925,7 +915,6 @@ img {
     margin-top: 5px;
 }
 
-/* Responsiv justering for små skjermer */
 /* Responsiv justering for små skjermer */
 @media (max-width: 768px) {
     .test-results-grid {
