@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accessibility</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="main.css">
 </head>
+<<<<<<< HEAD
 
 <style>
 
@@ -206,8 +207,12 @@ footer a:hover {
 
 <body>
     <header>
+=======
+<body class="accessibility-body">
+    <header class="accessibility-header">
+>>>>>>> 6de1ab6dec279eaa1bc73d5d119f5bbec1701153
         <h1>Tilgjengelighet</h1>
-        <nav>
+        <nav class="accessibility-nav">
             <ul class="navbar">
                 <li><a href="index.html">Hjem</a></li>
                 <li><a href="activity.html">Aktivitet</a></li>
@@ -216,22 +221,22 @@ footer a:hover {
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
+    <main class="accessibility-main">
+        <section class="accessibility-section">
             <h2>Hva er tilgjengelighet?</h2>
             <p>Tilgjengelighet på nettet handler om å sikre at alle brukere, inkludert personer med funksjonsnedsettelser, kan navigere og bruke nettstedet uten problemer.</p>
             <p>Dette inkluderer brukere som benytter skjermlesere, navigerer kun med tastatur eller har utfordringer med fargesyn.</p>
         </section>
-        <section>
+        <section class="accessibility-section">
             <h2>Beste praksis for tilgjengelighet</h2>
             <p>Her er noen grunnleggende prinsipper for å oppnå universelt design:</p>
-            <ul>
+            <ul style="list-style-type: none;">
                 <li>Bruk av semantisk HTML for bedre skjermleserkompatibilitet.</li>
                 <li>Test nettstedets kontrastnivåer med verktøy som Contrast Checker.</li>
                 <li>Tilby tastaturnavigasjon for alle interaktive elementer.</li>
             </ul>
         </section>
-        <section>
+        <section class="accessibility-section">
             <h2>Testresultater WAVE</h2>
             <p>Vi testet tilgjengeligheten til dette nettstedet ved hjelp av Lighthouse og WAVE. Vi valgte disse to nettsidene fordi, ...</p>
 
@@ -254,51 +259,9 @@ footer a:hover {
                 </div>
             </div>
         </section>
-        <section>
-            <h2>Hva sier testene?</h2>
-            <p>Selv om nettstedet allerede oppfyller mange tilgjengelighetsstandarder, er det noen forbedringer som kan implementeres i fremtiden:</p>
-            <ul>
-                <li>Støtte for flere språk ved hjelp av lang-attributtet i HTML.</li>
-                <li>Ytterligere tester med ulike skjermlesere som NVDA og VoiceOver.</li>
-                <li>Kontinuerlig brukertesting for å få tilbakemeldinger fra ekte brukere.</li>
-            </ul>
-        </section>
-        <section>
-        
-            <h2>Testresultater Lighthouse</h2>
-            <p>Vi testet tilgjengeligheten til dette nettstedet ved hjelp av Lighthouse og WAVE. Vi valgte disse to nettsidene fordi, ...</p>
-
-            <div class="test-results-grid">
-                <div>
-                    <img src="lighthouse-results1.png" alt="Lighthouse-test resultat 1">
-                    <p class="caption">Lighthouse-test: ...</p>
-                </div>
-                <div>
-                    <img src="lighthouse-results2.png" alt="Lighthouse-test resultat 2">
-                    <p class="caption">Lighthouse-test: ...</p>
-                </div>
-                <div>
-                    <img src="lighthouse-results3.png" alt="Lighthouse-test resultat 3">
-                    <p class="caption">WAVE-test: ...</p>
-                </div>
-                <div>
-                    <img src="lighthouse-results4.png" alt="Lighthouse-test resultat 4">
-                    <p class="caption">WAVE-test: ...</p>
-                </div>
-            </div>
-        </section>
-        <section>
-            <h2>Hva sier testene?</h2>
-            <p>Selv om nettstedet allerede oppfyller mange tilgjengelighetsstandarder, er det noen forbedringer som kan implementeres i fremtiden:</p>
-            <ul>
-                <li>Støtte for flere språk ved hjelp av lang-attributtet i HTML.</li>
-                <li>Ytterligere tester med ulike skjermlesere som NVDA og VoiceOver.</li>
-                <li>Kontinuerlig brukertesting for å få tilbakemeldinger fra ekte brukere.</li>
-            </ul>
-        </section>
-
     </main>
     <footer id="footer-OsloMet">
+<<<<<<< HEAD
         <section class="footer-content">
             <section class="footer-text">
                 <h3>Hold deg oppdatert på hva som skjer på campus</h3>
@@ -314,7 +277,16 @@ footer a:hover {
                 <img src="bilder/oslomet-logo-gul.webp" alt="OsloMet logo">
             </section>
         </section>
+=======
+        <h3>Hold deg oppdatert på hva som skjer på campus <button>Abonner</button></h3>
+        <h4>OSLO METROPOLITIAN UNIVERSITY</h4>
+        <p>STORBYUNIVERSITETET</p>
+        <p>Postboks 4, St. Olavs plass</p>
+        <p>0130 Oslo</p>
+        <p>Tlf.: 67 23 50 00 </p>
+        <p>E-post: post@oslomet.no</p>
+        <img src="bilder/oslomet-logo-gul.webp" class="footer-bilde" alt="OsloMet logo">
+>>>>>>> 6de1ab6dec279eaa1bc73d5d119f5bbec1701153
     </footer>
-    
 </body>
 </html>

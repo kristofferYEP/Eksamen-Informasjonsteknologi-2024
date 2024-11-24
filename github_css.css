@@ -6,81 +6,81 @@
     font-family: Arial, sans-serif;
 }
 
-body {
-    background-color: white;
+.github-body {
+    background-color: #f9df38;
     /* Darker background */
-    color: white;
-    /* Light text for contrast */
+    color: #000000;
+    /* Black text for contrast */
     line-height: 1.6;
 }
 
-.container {
+.github-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
-header {
-    background-color: #2e2e2e;
-    /* Darker header background */
-    color: #fff;
+.github-header {
+    color: #353535;
     text-align: center;
     padding: 40px 20px;
-    margin-bottom: 30px;
 }
 
-header h1 {
+.github-header h1 {
     font-size: 2.5em;
     margin-bottom: 10px;
 }
 
-header p {
+.github-header p {
     font-size: 1.2em;
 }
 
-nav {
-    background-color: #333333;
-    /* Darker navbar background */
-    border-bottom: 1px solid #444;
+.github-nav {
+    background-color: #216d9f;
     padding: 15px 0;
-    margin-bottom: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px;
+    border: solid black 1px;
 }
 
-nav ul {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+.github-nav ul {
+    display: inline-block;
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-nav ul li {
+.github-nav ul li {
+    display: inline;
     font-weight: bold;
+    margin: 0 10px;
 }
 
-nav ul li a {
+.github-nav ul li a {
     text-decoration: none;
-    color: #e0e0e0;
-    /* Light text color */
+    color: #000000;
     padding: 10px 15px;
     transition: background-color 0.3s;
     border-radius: 5px;
 }
 
-nav ul li a:hover {
-    background-color: #444;
+.github-nav ul li a:hover {
+    background-color: #aaaaaa;
     /* Slightly darker background on hover */
 }
 
-main h2 {
-    color: #d0d0d0;
+.github-main h2 {
+    color: #353535;
     /* Light grey for headers */
     margin-bottom: 15px;
 }
 
-section {
-    background-color: #2a2a2a;
-    /* Darker section background */
-    padding: 20px;
+.github-section {
+    background-color: #ffffff;
+    border: solid black 1px;
+    padding: 25px;
     margin-bottom: 20px;
     border-radius: 8px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
@@ -127,36 +127,21 @@ section {
 }
 
 footer {
-    background-color: #1c1c1c;
-    /* Dark footer background */
-    color: #e0e0e0;
-    text-align: center;
-    padding: 20px 0;
-    font-size: 0.9em;
-    margin-top: 30px;
-}
-
-footer {
     background-color: #004d80;
-    /* Litt mørkere for kontrast */
     padding: 20px;
     text-align: left;
     color: #ddd;
-    border-top: 3px solid #003366;
-    /* Legger til en toppgrense for effekt */
 }
 
 footer h3 {
     color: white;
     font-size: 1.2em;
     margin-bottom: 10px;
-    /* Gir litt avstand fra underliggende elementer */
     display: flex;
     align-items: center;
 }
 
-footer h4,
-footer p {
+footer h4, footer p {
     color: #f0f0f0;
     font-size: 1em;
     margin: 5px 0;
@@ -166,41 +151,32 @@ footer p {
     padding-left: 2%;
 }
 
-/* Styling for button */
 footer button {
-    background-color: #ffaa00;
-    /* Farge som står ut og gir kontrast */
-    color: #004d80;
+    background-color: #ffdc00;
+    color: #000000;
     border: none;
     border-radius: 5px;
     padding: 10px 15px;
     cursor: pointer;
     font-size: 1em;
     margin-left: 15px;
-    /* Liten avstand fra teksten */
     transition: background-color 0.3s, transform 0.3s;
-    /* Smooth hover-effekter */
 }
 
 footer button:hover {
-    background-color: #ffcc33;
-    /* Lysere variant ved hover */
+    background-color: #e69500;
     transform: scale(1.05);
-    /* Liten zoom-effekt ved hover */
 }
 
 footer button:active {
-    background-color: #e69500;
-    /* Mørkere farge ved klikk */
+    background-color: #ffdc00;
     transform: scale(0.98);
-    /* Liten nedtrykt effekt ved klikk */
 }
 
 .footer-bilde {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    /* Sentere bildet */
+    width: 150px;
+    max-width: 150px;
+    margin: -150px 40px 0 auto;
+    position: relative;
+    float: right;
 }
