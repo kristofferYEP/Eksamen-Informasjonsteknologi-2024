@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="no">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accessibility</title>
-    <link rel="stylesheet" href="main.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Accessibility</title>
+<link rel="stylesheet" href="main.css">
 </head>
 
-
-<body>
 <body class="accessibility-body">
     <header class="accessibility-header">
         <h1>Tilgjengelighet</h1>
@@ -20,48 +18,58 @@
                 <li><a href="github.html">GitHub</a></li>
             </ul>
         </nav>
-    </header>
-    <main class="accessibility-main">
-        <section class="accessibility-section">
-            <h2>Hva er tilgjengelighet?</h2>
-            <p>Tilgjengelighet på nettet handler om å sikre at alle brukere, inkludert personer med funksjonsnedsettelser, kan navigere og bruke nettstedet uten problemer.</p>
-            <p>Dette inkluderer brukere som benytter skjermlesere, navigerer kun med tastatur eller har utfordringer med fargesyn.</p>
-        </section>
-        <section class="accessibility-section">
-            <h2>Beste praksis for tilgjengelighet</h2>
-            <p>Her er noen grunnleggende prinsipper for å oppnå universelt design:</p>
-            <ul style="list-style-type: none;">
-                <li>Bruk av semantisk HTML for bedre skjermleserkompatibilitet.</li>
-                <li>Test nettstedets kontrastnivåer med verktøy som Contrast Checker.</li>
-                <li>Tilby tastaturnavigasjon for alle interaktive elementer.</li>
-            </ul>
-        </section>
-        <section class="accessibility-section">
-            <h2>Testresultater WAVE</h2>
+</header>
+<main class="accessibility-main">
+    <section class="accessibility-section">
+        h2>Hva er tilgjengelighet?</h2>
+        <p>Tilgjengelighet på nettet handler om å sikre at alle brukere, inkludert personer med funksjonsnedsettelser, kan navigere og bruke nettstedet uten problemer.</p>
+        <p>Dette inkluderer brukere som benytter skjermlesere, navigerer kun med tastatur eller har utfordringer med fargesyn.</p>
+    </section>
+<section class="accessibility-section">
+        <h2>Beste praksis for tilgjengelighet</h2>
+        <p>Her er noen grunnleggende prinsipper for å oppnå universelt design:</p>
+<ul style="list-style-type: none;">
+    <li>Bruk av semantisk HTML for bedre skjermleserkompatibilitet.</li>
+    <li>Test nettstedets kontrastnivåer med verktøy som Contrast Checker.</li>
+    <li>Tilby tastaturnavigasjon for alle interaktive elementer.</li>
+</ul>
+</section>
+<section class="accessibility-section">
+        <h2>Testresultater WAVE</h2>
             <p>Vi testet tilgjengeligheten til dette nettstedet ved hjelp av Lighthouse og WAVE. Vi valgte disse to nettsidene fordi, ...</p>
 
-            <div class="test-results-grid">
-                <div>
-                    <img src="wave-results1.png" alt="WAVE-test resultat 1">
-                    <p class="caption">WAVE-test: ...</p>
-                </div>
-                <div>
-                    <img src="wave-results2.png" alt="WAVE-test resultat 2">
-                    <p class="caption">WAVE-test: ...</p>
-                </div>
-                <div>
-                    <img src="wave-results3.png" alt="WAVE-test resultat 3">
-                    <p class="caption">WAVE-test: ...</p>
-                </div>
-                <div>
-                    <img src="wave-results4.png" alt="WAVE-test resultat 4">
-                    <p class="caption">WAVE-test: ...</p>
-                </div>
-            </div>
+        <section class="test-results-grid">
+        <section>
+            <img src="bilder/WAVE-test1.jpeg" alt="WAVE-test resultat 1">
+            <p class="caption"></p>
         </section>
+        <section>
+            <img src="bilder/WAVE-test2.jpeg" alt = "WAVE-test resultat 2">
+            <p class="caption">WAVE-test: ...</p>
+        </section>
+        <section>
+            <img src="wave-results3.png" alt="WAVE-test resultat 3">
+            <p class="caption">WAVE-test: ...</p>
+        </section>
+        <section>
+            <img src="bilder/WAVE-test4.jpeg" alt="WAVE-test resultat 4">
+            <p class="caption">WAVE-test: ...</p>
+        </section>
+        </section>
+        </section>
+        <section class="accessibility-section">
+            <h2>Hva sier testene?</h2>
+            <p>Det er 4 forskjellige tester</p>
+            <ul>
+                <li>WAVE test-1</li>
+                p>Denne WAVE-tilgjengelighetstesten viser at nettsiden er godt designet og oppfyller kravene til universell utforming, uten kritiske feil. Tekst og bakgrunn har tilstrekkelig kontrast for lesbarhet, og strukturen med 31 elementer gjør siden enkel å navigere, spesielt for skjermleserbrukere. De fire tilgjengelighetsfunksjonene og bruken av semantisk HTML bidrar til en god brukeropplevelse. Det er to varsler som bør undersøkes for å forbedre tilgjengeligheten ytterligere. Fraværet av ARIA-roller er positivt hvis HTML dekker behovene. Manuell testing og bruk av skjermlesere som NVDA og VoiceOver anbefales for å sikre full tilgjengelighet.</p>
+                <li>Ytterligere tester med ulike skjermlesere som NVDA og VoiceOver.</li>
+                <li>Kontinuerlig brukertesting for å få tilbakemeldinger fra ekte brukere.</li>
+            </ul>
+            </section>
+
     </main>
-    <footer id="footer-OsloMet">
-<<<<<<< HEAD
+    <footer id="footer-OsloMet ">
         <section class="footer-content">
             <section class="footer-text">
                 <h3>Hold deg oppdatert på hva som skjer på campus</h3>
@@ -71,22 +79,12 @@
                 <p>Postboks 4, St. Olavs plass</p>
                 <p>0130 Oslo</p>
                 <p>Tlf.: 67 23 50 00</p>
-                <p>E-post: <a href="mailto:post@oslomet.no">post@oslomet.no</a></p>
+                <p>E-post: <a [href="mailto:post@oslomet.no](mailto:href=%22mailto:post@oslomet.no)">[post@oslomet.no](mailto:post@oslomet.no)</a></p>
             </section>
             <section class="footer-logo">
                 <img src="bilder/oslomet-logo-gul.webp" alt="OsloMet logo">
             </section>
         </section>
-=======
-        <h3>Hold deg oppdatert på hva som skjer på campus <button>Abonner</button></h3>
-        <h4>OSLO METROPOLITIAN UNIVERSITY</h4>
-        <p>STORBYUNIVERSITETET</p>
-        <p>Postboks 4, St. Olavs plass</p>
-        <p>0130 Oslo</p>
-        <p>Tlf.: 67 23 50 00 </p>
-        <p>E-post: post@oslomet.no</p>
-        <img src="bilder/oslomet-logo-gul.webp" class="footer-bilde" alt="OsloMet logo">
->>>>>>> 6de1ab6dec279eaa1bc73d5d119f5bbec1701153
     </footer>
 </body>
 </html>
