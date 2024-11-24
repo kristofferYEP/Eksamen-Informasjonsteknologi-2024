@@ -840,42 +840,101 @@ img {
     font-size: 40px;
 }
 
-/* Navigasjonsmeny */
-.accessibility-nav {
-    background-color: #fde12b;
-    padding: 15px 0;
-    width: 45%;
-    margin: 0 auto;
-    text-align: center;
-    border: solid black 1px;
-    border-radius: 5px;
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #001d3a;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-.accessibility-nav ul {
-    display: inline-block;
-    list-style: none;
-    padding: 0;
+.navbar li {
     margin: 0;
 }
 
-.accessibility-nav ul li {
-    display: inline;
-    font-weight: bold;
-    margin: 0 10px;
-}
-
-.accessibility-nav ul li a {
+.navbar a {
     text-decoration: none;
-    color: rgb(0, 0, 0);
-    padding: 10px 15px;
-    transition: background-color 0.3s;
-    border-radius: 5px;
+    color: white;
+    padding: 1rem 1.5rem;
+    display: block;
+    font-weight: bold;
 }
 
-.accessibility-nav ul li a:hover {
-    background-color: #b6a225;
+.navbar a:hover,
+.navbar a.active {
+    background-color: #003b6f;
+    border-radius: 4px;
 }
 
+/* Responsiv navigasjonsmeny */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Endre fra horisontal til vertikal layout */
+        align-items: center; /* Sentraliser elementene */
+    }
+    .navbar a {
+        padding: 0.8rem 1rem; /* Juster padding for mindre skjermer */
+        width: 100%; /* Fyll bredden */
+        text-align: center; /* Sentrer tekst */
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar a {
+        padding: 0.6rem 0.8rem; /* Enda mindre padding for telefoner */
+    }
+}
+
+/* Navigasjonsmeny */
+.accessibility-nav {
+    background-color: #001d3a; /* Bakgrunnsfarge for hele navigasjonsseksjonen */
+}
+
+.accessibility-nav .navbar {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.accessibility-nav .navbar li {
+    margin: 0;
+}
+
+.accessibility-nav .navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem 1.5rem;
+    display: block;
+    font-weight: bold;
+}
+
+.accessibility-nav .navbar a:hover,
+.accessibility-nav .navbar a.active {
+    background-color: #003b6f;
+    border-radius: 4px;
+}
+
+/* Responsiv navigasjonsmeny */
+@media (max-width: 768px) {
+    .accessibility-nav .navbar {
+        flex-direction: column; /* Endre fra horisontal til vertikal layout */
+        align-items: center; /* Sentraliser elementene */
+    }
+    .accessibility-nav .navbar a {
+        padding: 0.8rem 1rem; /* Juster padding for mindre skjermer */
+        width: 100%; /* Fyll bredden */
+        text-align: center; /* Sentrer tekst */
+    }
+}
+
+@media (max-width: 480px) {
+    .accessibility-nav .navbar a {
+        padding: 0.6rem 0.8rem; /* Mindre padding for telefoner */
+    }
+}
 
 /* Hovedinnhold */
 .accessibility-main {
@@ -885,23 +944,21 @@ img {
 
 .accessibility-section {
     margin-bottom: 2rem;
-    background: #fde12b;
+    background: #ffffff;
     padding: 1rem;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .accessibility-section h2 {
-    color: black;
+    color: #0078d7;
 }
 
 /* Testresultater seksjon */
 .test-results-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    /* To kolonner */
-    gap: 20px;
-    /* Mellomrom mellom elementene */
+    grid-template-columns: repeat(2, 1fr); /* To kolonner */
+    gap: 20px; /* Mellomrom mellom elementene */
     margin-top: 20px;
 }
 
@@ -930,17 +987,15 @@ img {
 /* Responsiv justering for små skjermer */
 @media (max-width: 768px) {
     .test-results-grid {
-        grid-template-columns: 1fr;
-        /* En kolonne for mindre skjermer */
+        grid-template-columns: 1fr; /* En kolonne for mindre skjermer */
     }
 }
 
 @media (max-width: 600px) {
-    .footer-content {
-        flex-direction: column;
-        /* Sett innholdet vertikalt på små skjermer */
-        text-align: center;
-    }
+  .footer-content {
+    flex-direction: column; /* Sett innholdet vertikalt på små skjermer */
+    text-align: center;
+  }
 }
 
 img {
@@ -950,5 +1005,6 @@ img {
     border: 1px solid #ddd;
     border-radius: 5px;
 }
+
 
 /* ---===III Accessibility Styling Slutt III===---*/
