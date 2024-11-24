@@ -820,7 +820,7 @@ img {
 
 .accessibility-body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
+    line-height: 1.8;
     margin: 0;
     padding: 0;
     background-color: white;
@@ -829,20 +829,20 @@ img {
 
 /* Header */
 .accessibility-header {
-    background: #d7d715;
+    background: #f9df38;
     color: #000000;
-    padding: 2.5rem 0;
+    padding: 3rem 0;
     text-align: center;
 }
 
 .accessibility-header h1 {
-    margin: 1;
-    font-size: 40px;
+    margin: 0;
+    font-size: 48px;
 }
 
 .accessibility-nav {
     background-color: #ffffff;
-    padding: 15px 0;
+    padding: 20px 0;
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
@@ -860,55 +860,54 @@ img {
 .accessibility-nav ul li {
     display: inline;
     font-weight: bold;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 .accessibility-nav ul li a {
     text-decoration: none;
     color: #000000;
-    padding: 10px 15px;
+    padding: 12px 20px;
     transition: background-color 0.3s;
     border-radius: 5px;
 }
 
 .accessibility-nav ul li a:hover {
     background-color: #aaaaaa;
-    /* Slightly darker background on hover */
 }
 
 /* Hovedinnhold */
 .accessibility-main {
-    padding: 2rem;
+    padding: 3rem;
     background-color: #ffffff;
 }
 
 .accessibility-section {
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
     background: #ffffff;
-    padding: 1rem;
+    padding: 1.5rem;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .accessibility-section h2 {
     color: #0078d7;
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
 /* Testresultater seksjon */
 .test-results-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* To kolonner */
-    gap: 20px;
-    /* Mellomrom mellom elementene */
+    gap: 30px;
     margin-top: 20px;
 }
 
 .test-results-grid div {
     background: #fff;
-    padding: 15px;
+    padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
@@ -917,11 +916,11 @@ img {
     height: auto;
     border-radius: 5px;
     border: 1px solid #ddd;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .caption {
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #555;
     margin-top: 5px;
 }
@@ -930,14 +929,12 @@ img {
 @media (max-width: 768px) {
     .test-results-grid {
         grid-template-columns: 1fr;
-        /* En kolonne for mindre skjermer */
     }
 }
 
 @media (max-width: 600px) {
     .footer-content {
         flex-direction: column;
-        /* Sett innholdet vertikalt på små skjermer */
         text-align: center;
     }
 }
@@ -945,10 +942,11 @@ img {
 img {
     max-width: 100%;
     height: auto;
-    margin: 1rem 0;
+    margin: 1.5rem 0;
     border: 1px solid #ddd;
     border-radius: 5px;
 }
+
 
 
 /* ---===III Accessibility Styling Slutt III===---*/
