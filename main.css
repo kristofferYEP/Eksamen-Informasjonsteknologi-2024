@@ -14,7 +14,8 @@
     line-height: 1.6;
 }
 
-/* === Header-seksjon === */
+/* === Bakgrunnsbilder med gradient og størrelse === */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/gradient */
 .header-index {
     min-height: 100vh;
     width: 100%;
@@ -51,6 +52,8 @@
 }
 
 /* Responsiv header-tekst og bilde */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries */
+
 @media (max-width: 1200px) {
     .header-index {
         min-height: 80vh;
@@ -205,6 +208,8 @@
 }
 
 /* === Styling for Utvidbare Seksjoner === */
+/* https://www.w3schools.com/css/css3_transitions.asp */
+
 
 /* Container for utvidbare seksjoner */
 .utvidbar-seksjon {
@@ -545,6 +550,9 @@ footer button:active {
     margin-bottom: 15px;
 }
 
+/* === Knapp med hover-effekt === */
+/* https://css-tricks.com/almanac/properties/t/transition/ */
+
 .activity-button {
     display: block;
     padding: 10px 20px;
@@ -774,6 +782,8 @@ img {
     transition: box-shadow 0.3s ease;
 }
 
+/* === Responsiv Grid-layout for bilder === */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout */
 .image-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
